@@ -144,6 +144,8 @@ scheduling, Supabase, Google Calendar, and an admin dashboard.
 
 <br /><br />
 
-<i>Getting better every day. 🚀</i>
+<p align="center">
+  <i>Getting better every day. 🚀</i>
+</p>
 
 </div>
