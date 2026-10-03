@@ -1,16 +1,3 @@
-<div align="center">
-
-```
- _   _    _    __     __  ____
-| \ | |  / \   \ \   / / / ___|
-|  \| | / _ \   \ \ / /  \___ \
-| |\  |/ ___ \   \ V /    ___) |
-|_| \_/_/   \_\   \_/    |____/
-```
-
-</div>
-
-```
 navs@lyceum ------------------------------------------------------
 . Host: ..................... Lyceum of the Philippines University
 . Kernel: .......................... BS Computer Science, 3rd Year
@@ -35,10 +22,6 @@ navs@lyceum ------------------------------------------------------
 . LinkedIn: ............................ in/navin-llanes-b50871317
 . GitHub: .............................................. navinskyy
 . Instagram: ............................................. _nabean
-```
-
-[GitHub](https://github.com/navinskyy) | [LinkedIn](https://www.linkedin.com/in/navin-llanes-b50871317) | [Instagram](https://www.instagram.com/_nabean)
----
 
 ## 🐍 Contribution Snake
 
