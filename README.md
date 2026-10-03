@@ -1,3 +1,12 @@
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=2500&pause=1000&color=3DAA3D&center=true&vCenter=true&width=520&height=40&lines=BS+Computer+Science+Student;Web+Developer;Blockchain+Builder;ML+Researcher;Security+Learner" alt="Typing banner: BS Computer Science Student, Web Developer, Blockchain Builder, ML Researcher, Security Learner" />
+
+</div>
+
+```
+navs@lyceum:~$ neofetch
+
 navs@lyceum ------------------------------------------------------
 . Host: ..................... Lyceum of the Philippines University
 . Kernel: .......................... BS Computer Science, 3rd Year
@@ -22,6 +31,22 @@ navs@lyceum ------------------------------------------------------
 . LinkedIn: ............................ in/navin-llanes-b50871317
 . GitHub: .............................................. navinskyy
 . Instagram: ............................................. _nabean
+```
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=java,py,js,ts,react,nextjs,html,css,tailwind,nodejs,firebase,supabase,mysql,git,github,vscode,linux&perline=9" alt="Tech stack icons" />
+
+<br /><br />
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=navinskyy&show_icons=true&title_color=3DAA3D&text_color=C9D1D9&icon_color=3DAA3D&bg_color=0D1117&border_color=30363D" alt="GitHub stats for navinskyy" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=navinskyy&layout=compact&title_color=3DAA3D&text_color=C9D1D9&bg_color=0D1117&border_color=30363D" alt="Top languages for navinskyy" />
+
+<br /><br />
+
+[GitHub](https://github.com/navinskyy) | [LinkedIn](https://www.linkedin.com/in/navin-llanes-b50871317) | [Instagram](https://www.instagram.com/_nabean)
+
+</div>
 
 ## 🐍 Contribution Snake
 
