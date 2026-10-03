@@ -142,20 +142,6 @@ scheduling, Supabase, Google Calendar, and an admin dashboard.
 
 </div>
 
----
-
-<div align="center">
-
-### 📫 Connect
-
-<a href="https://github.com/navinskyy">GitHub</a>
-&nbsp;•&nbsp;
-<a href="https://www.linkedin.com/in/navin-llanes-b50871317">LinkedIn</a>
-&nbsp;•&nbsp;
-<a href="https://navinbyron-llanes.netlify.app">Portfolio</a>
-&nbsp;•&nbsp;
-<a href="https://www.instagram.com/_nabean">Instagram</a>
-
 <br /><br />
 
 <i>Getting better every day. 🚀</i>
