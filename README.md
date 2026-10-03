@@ -1,79 +1,43 @@
-# Hi, I'm Navin 👋
+<div align="center">
 
-### Computer Science Student • Software Developer • Cybersecurity Enthusiast
+```
+ _   _    _    __     __  ____
+| \ | |  / \   \ \   / / / ___|
+|  \| | / _ \   \ \ / /  \___ \
+| |\  |/ ___ \   \ V /    ___) |
+|_| \_/_/   \_\   \_/    |____/
+```
 
-I'm an aspiring software engineer who enjoys building practical applications, learning new technologies, and exploring cybersecurity.
+</div>
 
-Currently focused on **React, Java, Python, JavaScript, and cybersecurity**.
+```
+navs@lyceum ------------------------------------------------------
+. Host: ..................... Lyceum of the Philippines University
+. Kernel: .......................... BS Computer Science, 3rd Year
+. Status: ........................................ Working Student
+. IDE: ................................................... VS Code
 
----
+. Languages.Programming: .... Java, Python, JavaScript, TypeScript
+. Languages.Web: ............. HTML, CSS, React, Next.js, Tailwind
+. Backend.Data: ............... Node.js, Firebase, Supabase, MySQL
+. Tools: ...................................... Git, GitHub, Linux
+. Focus: ....................... Web, Blockchain/DApp, ML Research
 
-## 🧑‍💻 About Me
+. Role.Community: ............. Vice Presidential Committee Member
+. Org: ........................ Lyceum Pirate Esports Organization
 
-- 🎓 Computer Science student
-- 💻 Interested in software engineering and full-stack development
-- ⚛️ Building projects with React and modern web technologies
-- 🔐 Exploring networking and cybersecurity
-- 🛠️ Learning by building real-world projects
-- 📚 Always trying to get better every day
+. Exploring.Security: ...... Network Security, Penetration Testing
+. Exploring.Attacks: ................ SQL Injection, XXE Injection
+. Exploring.Tools: ................... Kali Linux, Nmap, Honeypots
+. Exploring.Study: ........... Security+, Web Application Security
 
----
+- Contact --------------------------------------------------------
+. LinkedIn: ............................ in/navin-llanes-b50871317
+. GitHub: .............................................. navinskyy
+. Instagram: ............................................. _nabean
+```
 
-## ⚙️ Tech Stack
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=java,python,javascript,typescript,react,nextjs,html,css,tailwind,nodejs,firebase,supabase,mysql,git,github,vscode,linux" />
-</p>
-
----
-
-## 🚀 Featured Projects
-
-### 📚 LIBR-A.I-RY
-AI-powered e-library prototype designed to improve how students search and discover learning resources.
-
-**React • AI • Firebase • Natural Language Search**
-
-### 🩺 NursePrep
-A nursing review platform designed to help nursing students prepare for examinations through quizzes, flashcards, progress tracking, and AI-assisted learning.
-
-**React • Firebase • Node.js • AI**
-
-### 🦷 AI Dental Clinic System
-AI-integrated dental clinic website with appointment booking, Google Calendar integration, automated notifications, booking references, and an administrative dashboard.
-
-**Next.js • TypeScript • Tailwind CSS • Supabase • Google Calendar**
-
-### ☕ CoffeeQuest
-A café discovery and social platform concept for discovering cafés and sharing experiences.
-
-**React Native • Expo**
-
----
-
-## 🔐 Cybersecurity
-
-Currently exploring:
-
-- Network security
-- Linux & Kali Linux
-- Penetration testing
-- Nmap
-- SQL Injection
-- XXE Injection
-- Honeypots
-- Security+ concepts
-- Web application security
-
----
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=navinskyy&show_icons=true&theme=transparent&hide_border=true&rank_icon=github" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=navinskyy&layout=compact&theme=transparent&hide_border=true" />
-</p>
-
+[GitHub](https://github.com/navinskyy) | [LinkedIn](https://www.linkedin.com/in/navin-llanes-b50871317) | [Instagram](https://www.instagram.com/_nabean)
 ---
 
 ## 🐍 Contribution Snake
