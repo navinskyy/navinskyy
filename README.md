@@ -64,12 +64,6 @@
   />
 </p>
 
-<p align="center">
-  <a href="https://gitbio-ruby.vercel.app">
-    <strong>🚀 Open Interactive Dashboard</strong>
-  </a>
-</p>
-
 ## TECH STACK // THE SPIDER-SUIT
 
 <div align="center">
