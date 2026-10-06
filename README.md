@@ -1,89 +1,143 @@
-<div align="center">
+# GitHub Contribution Dashboard
 
-# `NAVINSKYY` // FRIENDLY NEIGHBORHOOD DEVELOPER
+A personal GitHub contribution analytics dashboard inspired by the GitHub activity dashboard aesthetic. Built with Next.js, TypeScript, and Tailwind CSS. Fetches **live data** from the GitHub GraphQL API — no hardcoded values, no databases, no paid services.
 
-### `WITH GREAT POWER COMES GREAT RESPONSIBILITY.`
+## Features
 
-<p><em>Building useful things, one web-sling at a time.</em></p>
+- **Contribution Graph** — custom grid with intensity coloring, hover tooltips, and "today" marker
+- **Current-month statistics** — commits, best day, daily average, active days, current streak
+- **Contribution Activity timeline** — last 4 months grouped with per-repository commit breakdown
+- **Repository commit bars** — dynamic-width bars scaled to the largest repo each month
+- **Summary statistics** — total commits, active repos, repos created, pull requests
+- **Live/fresh data** — server-side fetch on every page load + manual refresh button
+- **Loading & error states** — skeleton screens and retry UI
+- **Responsive** — desktop, tablet, and mobile layouts
+- **Secure** — GitHub token never leaves the server
 
-<img src="./profile_card.svg?v=ad415ae" alt="Spider-Man-themed animated profile card for Navin Llanes" width="900" />
+## Tech Stack
 
-</div>
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- GitHub GraphQL API
+- lucide-react (icons)
 
-> **Animation fallback:** If GitHub does not animate the SVG, the contribution graph, activity cards, and text summary below still provide the full profile experience.
+## Local Installation
 
-## PROFILE // BEHIND THE MASK
+1. Clone the repository:
 
-| Field | Details |
-|:--|:--|
-| **Name** | Navin Llanes |
-| **School** | Lyceum of the Philippines University, Manila |
-| **Course** | Bachelor of Science in Computer Science |
-| **Current role** | Cybersecurity Intern at Rivan |
-| **IDE** | Visual Studio Code |
-| **Mission** | Web development, cybersecurity, networking, and software engineering |
-
-## DAILY CONTRIBUTION GRAPH // THE WEB
-
-<div align="center">
-
-<img src="./daily_graph.svg?v=1222c59" alt="Animated daily GitHub contribution graph in green shades" width="900" />
-
-<br />
-
-<sub>Each green square is a web node. Darker green means more activity.</sub>
-
-</div>
-
-## CONTRIBUTION ACTIVITY // CLIMBING THE TIMELINE
-
-<div align="center">
-
-<img src="./activity.svg?v=1222c59" alt="Animated Spider-Man-inspired contribution activity timeline" width="900" />
-
-</div>
-
-### ACTIVITY SNAPSHOT
-
-| Web node | Current snapshot | Period |
-|:--|--:|:--|
-| Total contributions | **1,200** | Last 12 months |
-| Top repository: Project X | **300 commits** | Current snapshot |
-| Second repository: Project Y | **150 commits** | Current snapshot |
-| New repositories | **3 launched** | Last 6 months |
-
-> **Accessible summary:** Navinskyy recorded 1,200 contributions in the last year, with 300 commits in Project X, 150 commits in Project Y, and 3 repositories launched in the last 6 months. If an SVG does not animate or load, this table preserves the exact data.
-
-## TECH STACK // THE SPIDER-SUIT
-
-<div align="center">
-
-`Java` `Python` `JavaScript` `TypeScript` `HTML` `CSS` `React` `Next.js` `Tailwind CSS` `Node.js` `Firebase` `Supabase` `MySQL` `Git` `GitHub` `Linux`
-
-</div>
-
-```text
-BUILD      -> web applications and software projects
-SECURE     -> cybersecurity, networking, and secure-by-design thinking
-LEARN      -> improve every day and share the climb
-SHIP       -> turn ideas into working tools
+```bash
+git clone https://github.com/yourusername/gitbio.git
+cd gitbio
 ```
 
-## CONTACT // FIND ME IN THE WEB
+2. Install dependencies:
 
-<div align="center">
+```bash
+npm install
+```
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/navinskyy)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/navin-llanes-b50871317)
-[![Portfolio](https://img.shields.io/badge/Portfolio-111111?style=for-the-badge&logo=googlechrome&logoColor=white)](https://navinbyron-llanes.netlify.app)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/_nabean)
+3. Create `.env.local` and add your GitHub token:
 
-</div>
+```bash
+cp .env.example .env.local
+```
 
-<div align="center">
+Edit `.env.local`:
 
-### `ANYONE CAN WEAR THE MASK.`
+```env
+GITHUB_TOKEN=your_github_token_here
+GITHUB_USERNAME=navinskyy
+```
 
-<sub>Keep climbing. Keep contributing. Keep the web strong.</sub>
+> **Token security:** Your `GITHUB_TOKEN` is read **only on the server** (in the API route). It is never prefixed with `NEXT_PUBLIC_`, never sent to the browser, and never committed to the repository. `.env.local` is listed in `.gitignore`.
 
-</div>
+4. Start the dev server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+## Environment Variables
+
+| Variable          | Required | Description                                              |
+| ----------------- | -------- | ------------------------------------------------------- |
+| `GITHUB_TOKEN`    | Yes      | GitHub personal access token (server-side only)         |
+| `GITHUB_USERNAME` | Yes      | GitHub username to display on the dashboard             |
+
+### Creating a GitHub Token
+
+1. Go to [GitHub Settings → Developer settings → Personal access tokens](https://github.com/settings/tokens)
+2. Click **Generate new token (classic)**
+3. Give it a name (e.g., `gitbio-dashboard`)
+4. Select the **repo** scope (read access to public repositories is sufficient for the data we fetch)
+5. Copy the token and paste it into `GITHUB_TOKEN` in `.env.local`
+
+> The token only needs `repo` scope. It is never exposed to the browser.
+
+## How the GitHub API Works
+
+The dashboard uses the GitHub GraphQL API (`https://api.github.com/graphql`) server-side. On each page load, the API route (`/api/github`) makes authenticated requests with the `Authorization: Bearer <token>` header and queries:
+
+- `contributionsCollection` — contribution calendar, commit/PR/issue totals, repository breakdowns, repository creation dates
+- The route fetches the current month plus the previous 3 months individually, then aggregates them into a single dashboard payload
+
+The token is read from `process.env.GITHUB_TOKEN` inside the route handler and is never included in any client-side code.
+
+## How the Dashboard Stays Updated
+
+- **Fresh server fetch on every page load** — no static caching, so the dashboard reflects the latest GitHub activity
+- **Manual refresh button** in the header re-fetches data on demand
+- No automatic polling is configured by default to avoid hammering the GitHub API. If you want periodic refresh, add a `setInterval` in the client wrapper with a 5-minute interval.
+
+## Deploy to Vercel
+
+1. Push your code to GitHub:
+
+```bash
+git add -A
+git commit -m "Add GitHub contribution dashboard"
+git push origin main
+```
+
+2. Import the repository into [Vercel](https://vercel.com):
+
+3. In the Vercel project settings, add the following **Environment Variables**:
+
+   - `GITHUB_TOKEN` = your GitHub personal access token
+   - `GITHUB_USERNAME` = `navinskyy`
+
+4. Deploy. Vercel's free tier handles Next.js builds and deployments with no configuration needed.
+
+> The project runs entirely on Vercel's free tier. No database, no paid APIs, no external services.
+
+## 🕷️ GitHub Activity
+
+<p align="center">
+  <img
+    src="https://gitbio-ruby.vercel.app/api/github-card"
+    alt="Navinskyy's GitHub Contribution Activity"
+    width="100%"
+  />
+</p>
+
+<p align="center">
+  <a href="https://gitbio-ruby.vercel.app">
+    <strong>🚀 Open Interactive Dashboard</strong>
+  </a>
+</p>
+
+The card is generated server-side from the same GitHub token and username configuration as the dashboard. Its statistics and heatmap are never hardcoded.
+
+## Limitations & GitHub API Considerations
+
+- **Rate limits:** GitHub GraphQL API allows 5,000 points per hour for authenticated requests. The dashboard makes ~5 requests per page load, so this is unlikely to be an issue for a personal dashboard.
+- **Contribution calendar:** The `contributionCalendar` counts total contributions (commits, PRs, issues), not just commits. Monthly commit counts use `totalCommitContributions` from each monthly query for accuracy.
+- **Private contributions:** If your contributions include private repositories, the token must have `repo` scope and the private contributions must be enabled in your GitHub settings.
+- **New repositories:** Repository creation dates come from `createdAt` in `commitContributionsByRepository`. Repositories with no commit contributions in the queried period are not counted.
+
+## License
+
+MIT
