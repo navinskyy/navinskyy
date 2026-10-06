@@ -15,6 +15,14 @@
 
 <div align="center">
 
+<img src="./spiderman-climbing.svg" alt="Animated Spider-Man-inspired climber moving up a green contribution timeline" width="720" />
+
+</div>
+
+> **Animation fallback:** If GitHub’s image proxy does not animate the SVG, the static timeline below, the activity table, and the accessible summary still show the complete contribution data.
+
+<div align="center">
+
 <svg width="720" height="780" viewBox="0 0 720 780" role="img" aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg">
   <title id="title">Spider-Man climbing a green contribution timeline</title>
   <desc id="desc">A vertical timeline showing 1,200 contributions, top repositories, and three new repositories launched over six months.</desc>
