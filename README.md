@@ -6,7 +6,7 @@
 
 <p><em>Building useful things, one web-sling at a time.</em></p>
 
-<img src="./spiderman-climbing.svg?v=1222c59" alt="Pixel-art Spider-Man climbing a green contribution timeline" width="720" />
+<img src="./profile_card.svg?v=ad415ae" alt="Spider-Man-themed animated profile card for Navin Llanes" width="900" />
 
 </div>
 
