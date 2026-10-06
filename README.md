@@ -6,7 +6,7 @@
 
 <p><em>Building useful things, one web-sling at a time.</em></p>
 
-<img src="./spiderman-climbing.svg" alt="Pixel-art Spider-Man climbing a green contribution timeline" width="720" />
+<img src="./spiderman-climbing.svg?v=1222c59" alt="Pixel-art Spider-Man climbing a green contribution timeline" width="720" />
 
 </div>
 
@@ -27,7 +27,7 @@
 
 <div align="center">
 
-<img src="./daily_graph.svg" alt="Animated daily GitHub contribution graph in green shades" width="900" />
+<img src="./daily_graph.svg?v=1222c59" alt="Animated daily GitHub contribution graph in green shades" width="900" />
 
 <br />
 
@@ -39,7 +39,7 @@
 
 <div align="center">
 
-<img src="./activity.svg" alt="Animated Spider-Man-inspired contribution activity timeline" width="900" />
+<img src="./activity.svg?v=1222c59" alt="Animated Spider-Man-inspired contribution activity timeline" width="900" />
 
 </div>
 
