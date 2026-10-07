@@ -10,8 +10,6 @@
 
 </div>
 
-> **Animation fallback:** If GitHub does not animate the SVG, the contribution graph, activity cards, and text summary below still provide the full profile experience.
-
 ## PROFILE // BEHIND THE MASK
 
 | Field | Details |
@@ -51,8 +49,6 @@
 | Top repository: Project X | **300 commits** | Current snapshot |
 | Second repository: Project Y | **150 commits** | Current snapshot |
 | New repositories | **3 launched** | Last 6 months |
-
-> **Accessible summary:** Navinskyy recorded 1,200 contributions in the last year, with 300 commits in Project X, 150 commits in Project Y, and 3 repositories launched in the last 6 months. If an SVG does not animate or load, this table preserves the exact data.
 
 ## 🕷️ GitHub Activity
 
