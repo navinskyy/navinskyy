@@ -1,78 +1,95 @@
-<!-- Generated from README.template.md by `npm run readme`. Edit the template, not README.md. -->
 <div align="center">
 
-<img src="https://gitbio-ruby.vercel.app/api/github-card/hero" alt="NAVINSKYY, Friendly Neighborhood Developer. With great power comes great responsibility." width="100%" />
+# `NAVINSKYY` // FRIENDLY NEIGHBORHOOD DEVELOPER
 
-<img src="./assets/spiderman.gif" alt="Pixel-art Spider-Man swinging across a city skyline" width="100%" />
+### `WITH GREAT POWER COMES GREAT RESPONSIBILITY.`
+
+<p><em>Building useful things, one web-sling at a time.</em></p>
+
+<img src="./profile_card.svg?v=ad415ae" alt="Spider-Man-themed animated profile card for Navin Llanes" width="900" />
 
 </div>
 
-<p align="center"><img src="./assets/readme/divider.svg" alt="" width="100%" /></p>
+## PROFILE // BEHIND THE MASK
 
-<p align="center"><img src="./assets/readme/h-profile.svg" alt="Profile: behind the mask" width="100%" /></p>
+| Field | Details |
+|:--|:--|
+| **Name** | Navin Llanes |
+| **School** | Lyceum of the Philippines University, Manila |
+| **Course** | Bachelor of Science in Computer Science |
+| **Current role** | Cybersecurity Intern at Rivan |
+| **IDE** | Visual Studio Code |
+| **Mission** | Web development, cybersecurity, networking, and software engineering |
 
-<p align="center"><img src="./assets/readme/profile.svg" alt="Navin Llanes. Lyceum of the Philippines University, Manila. BS Computer Science. Cybersecurity Intern / Developer. Web development, cybersecurity, networking, and software engineering." width="100%" /></p>
+## DAILY CONTRIBUTION GRAPH // THE WEB
 
-<p align="center"><img src="./assets/readme/divider.svg" alt="" width="100%" /></p>
+<div align="center">
 
-<p align="center"><img src="./assets/readme/h-activity.svg" alt="GitHub activity: the web" width="100%" /></p>
+<img src="./daily_graph.svg?v=1222c59" alt="Animated daily GitHub contribution graph in green shades" width="900" />
 
-<p align="center">
-  <img src="https://gitbio-ruby.vercel.app/api/github-card/stats" alt="GitHub stats: commits this month, best day, current streak, active repositories" width="100%" />
-</p>
-<p align="center">
-  <img src="https://gitbio-ruby.vercel.app/api/github-card/daily" alt="Daily contributions for the last 30 days" width="100%" />
-</p>
-<p align="center">
-  <img src="https://gitbio-ruby.vercel.app/api/github-card/heatmap" alt="Contribution graph for the last year" width="100%" />
-</p>
-<p align="center">
-  <img src="https://gitbio-ruby.vercel.app/api/github-card/timeline" alt="Contribution activity timeline" width="100%" />
-</p>
-<p align="center">
-  <img src="https://gitbio-ruby.vercel.app/api/github-card/monthly" alt="Monthly activity patrol log" width="100%" />
-</p>
-<p align="center">
-  <img src="https://gitbio-ruby.vercel.app/api/github-card/repos" alt="Repository activity" width="100%" />
-</p>
+<br />
 
-<p align="center">
-  <a href="https://gitbio-ruby.vercel.app"><strong>🚀 Open the interactive dashboard</strong></a>
-</p>
+<sub>Each green square is a web node. Darker green means more activity.</sub>
 
-> Cards are server-rendered SVGs that refresh about once an hour from live GitHub data.
+</div>
 
-<p align="center"><img src="./assets/readme/divider.svg" alt="" width="100%" /></p>
+## CONTRIBUTION ACTIVITY // CLIMBING THE TIMELINE
 
-<p align="center"><img src="./assets/readme/h-stack.svg" alt="Tech stack: the Spider-Suit" width="100%" /></p>
+<div align="center">
 
-<p align="center"><img src="./assets/readme/stack.svg" alt="Languages: Java, Python, JavaScript, TypeScript. Frontend: React, Next.js, Tailwind CSS, HTML/CSS. Backend and data: Node.js, Firebase, Supabase, MySQL. Tools and security: Git, Linux, Docker, Cybersecurity." width="100%" /></p>
+<img src="./activity.svg?v=1222c59" alt="Animated Spider-Man-inspired contribution activity timeline" width="900" />
 
-<p align="center"><img src="./assets/readme/divider.svg" alt="" width="100%" /></p>
+</div>
 
-<p align="center"><img src="./assets/readme/h-projects.svg" alt="Projects: the web" width="100%" /></p>
+### ACTIVITY SNAPSHOT
 
-<a href="https://github.com/navinskyy/gitbio"><img src="https://gitbio-ruby.vercel.app/api/github-card/project?p=gitbio" alt="GitBio project card" width="100%" /></a>
-<a href="https://github.com/navinskyy/linux-zabbix-core-switches-setup"><img src="https://gitbio-ruby.vercel.app/api/github-card/project?p=zabbix-switches" alt="Linux Zabbix Core Switches Setup project card" width="100%" /></a>
-<a href="https://navinbyron-llanes.netlify.app"><img src="https://gitbio-ruby.vercel.app/api/github-card/project?p=portfolio" alt="Developer portfolio project card" width="100%" /></a>
+| Web node | Current snapshot | Period |
+|:--|--:|:--|
+| Total contributions | **1,200** | Last 12 months |
+| Top repository: Project X | **300 commits** | Current snapshot |
+| Second repository: Project Y | **150 commits** | Current snapshot |
+| New repositories | **3 launched** | Last 6 months |
 
-<p align="center"><img src="./assets/readme/divider.svg" alt="" width="100%" /></p>
-
-<p align="center"><img src="./assets/readme/h-learning.svg" alt="Currently learning" width="100%" /></p>
-
-<p align="center"><img src="./assets/readme/learning.svg" alt="Network Security, Penetration Testing, Linux, Docker, DevOps, React / Next.js, GitHub API, Cybersecurity" width="100%" /></p>
-
-<p align="center"><img src="./assets/readme/divider.svg" alt="" width="100%" /></p>
-
-<p align="center"><img src="./assets/readme/h-contact.svg" alt="Find me in the web" width="100%" /></p>
+## 🕷️ GitHub Activity
 
 <p align="center">
-  <a href="https://github.com/navinskyy"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-  <a href="https://www.linkedin.com/in/navin-llanes-b50871317"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://navinbyron-llanes.netlify.app"><img src="https://img.shields.io/badge/Portfolio-111111?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
-  <a href="https://www.instagram.com/_nabean"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
+  <img
+    src="https://gitbio-ruby.vercel.app/api/github-card"
+    alt="Navinskyy's GitHub Contribution Activity"
+    width="100%"
+  />
 </p>
 
-<p align="center"><img src="./assets/readme/divider.svg" alt="" width="100%" /></p>
+## TECH STACK // THE SPIDER-SUIT
 
-<p align="center"><img src="./assets/readme/quote.svg" alt="With great power comes great responsibility. Keep climbing. Keep contributing. Keep the web strong." width="100%" /></p>
+<div align="center">
+
+`Java` `Python` `JavaScript` `TypeScript` `HTML` `CSS` `React` `Next.js` `Tailwind CSS` `Node.js` `Firebase` `Supabase` `MySQL` `Git` `GitHub` `Linux`
+
+</div>
+
+```text
+BUILD      -> web applications and software projects
+SECURE     -> cybersecurity, networking, and secure-by-design thinking
+LEARN      -> improve every day and share the climb
+SHIP       -> turn ideas into working tools
+```
+
+## CONTACT // FIND ME IN THE WEB
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/navinskyy)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/navin-llanes-b50871317)
+[![Portfolio](https://img.shields.io/badge/Portfolio-111111?style=for-the-badge&logo=googlechrome&logoColor=white)](https://navinbyron-llanes.netlify.app)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/_nabean)
+
+</div>
+
+<div align="center">
+
+### `ANYONE CAN WEAR THE MASK.`
+
+<sub>Keep climbing. Keep contributing. Keep the web strong.</sub>
+
+</div>
