@@ -1,12 +1,12 @@
 <!-- ============================================================
   🚀 SPACE-THEMED PROFILE README
-  Search for YOUR_USERNAME / YOUR_NAME and replace with your info.
+  Search fornavinskyy / navinskyy and replace with your info.
   Delete any section you don't want.
 ============================================================ -->
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0d1117,50:1b1464,100:6a11cb&text=Commander%20YOUR_NAME&fontColor=39ff14&fontSize=48&fontAlignY=38&desc=Defending%20the%20codebase%20across%20the%20galaxy&descColor=c9d1d9&descSize=18&descAlignY=60&animation=fadeIn" alt="header" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0d1117,50:1b1464,100:6a11cb&text=Commander%20navinskyy&fontColor=39ff14&fontSize=48&fontAlignY=38&desc=Defending%20the%20codebase%20across%20the%20galaxy&descColor=c9d1d9&descSize=18&descAlignY=60&animation=fadeIn" alt="header" width="100%"/>
 
 <a href="https://github.com/navinksyy">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3500&pause=1000&color=39FF14&center=true&vCenter=true&width=600&lines=%3E+Initializing+launch+sequence...;%3E+Scanning+for+bugs+in+Sector+7...;%3E+Shipping+code+at+light+speed+%F0%9F%9A%80;%3E+All+systems+nominal.+Ready+for+mission." alt="Typing SVG" />
@@ -25,12 +25,12 @@
 ## 🛰️ &nbsp;MISSION BRIEFING
 
 ```text
-> PILOT........ YOUR_NAME
-> BASE......... Quezon City, Philippines
-> MISSION...... Building cool things, one commit at a time
-> CURRENTLY.... Learning [something you're learning]
-> ASK ME ABOUT. [your favorite topics]
-> FUN FACT..... [something fun about you]
+> PILOT........ navinskyy
+> BASE......... Caloocan City, Philippines
+> MISSION...... Breaking things to understand them
+> CURRENTLY.... Learning offensive & defensive security
+> ASK ME ABOUT. Linux, networks, pentesting & AI
+> FUN FACT..... One more commit before I sleep.
 ```
 
 <br/>
