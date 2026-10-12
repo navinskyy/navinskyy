@@ -53,8 +53,6 @@
 
 </div>
 
-> 🔧 Swap the icons by editing the list after `?i=`. Full list of names: [skillicons.dev](https://skillicons.dev)
-
 <br/>
 
 ## 🌌 &nbsp;ACTIVE MISSIONS
