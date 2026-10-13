@@ -1,9 +1,3 @@
-<!-- ============================================================
-  🚀 SPACE-THEMED PROFILE README
-  Search fornavinskyy / navinskyy and replace with your info.
-  Delete any section you don't want.
-============================================================ -->
-
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0d1117,50:1b1464,100:6a11cb&text=Commander%20navinskyy&fontColor=39ff14&fontSize=48&fontAlignY=38&desc=Defending%20the%20codebase%20across%20the%20galaxy&descColor=c9d1d9&descSize=18&descAlignY=60&animation=fadeIn" alt="header" width="100%"/>
