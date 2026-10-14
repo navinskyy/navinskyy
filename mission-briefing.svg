@@ -63,7 +63,7 @@
 <circle cx="112" cy="95" r="40" fill="url(#orb)"/>
 <circle cx="112" cy="95" r="40" fill="none" stroke="#fff" stroke-opacity=".35"/>
 <path d="M82 80 Q112 62 142 82" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="3" stroke-linecap="round"/>
-<text x="112" y="104" text-anchor="middle" font-family="'Helvetica Neue',Helvetica,Arial,'Segoe UI',sans-serif" font-size="27" font-weight="800" letter-spacing="1" fill="#fff">GS</text>
+<text x="112" y="104" text-anchor="middle" font-family="'Helvetica Neue',Helvetica,Arial,'Segoe UI',sans-serif" font-size="27" font-weight="800" letter-spacing="1" fill="#fff">NL</text>
 <g class="orbit"><circle cx="168" cy="95" r="3.6" fill="#39ff14" filter="url(#soft)"/></g>
 </g>
 <text x="200" y="64" font-family="'Helvetica Neue',Helvetica,Arial,'Segoe UI',sans-serif" font-size="9.5" letter-spacing="3" fill="#8f8bc4" font-weight="600">CREW MEMBER // ACTIVE</text>
