@@ -1,14 +1,14 @@
 <!-- ============================================================
   🚀 SPACE-THEMED PROFILE README
-  Search for YOUR_USERNAME / YOUR_NAME and replace with your info.
+  Search for navinskyy / navin and replace with your info.
   Delete any section you don't want.
 ============================================================ -->
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0d1117,50:1b1464,100:6a11cb&text=Commander%20YOUR_NAME&fontColor=39ff14&fontSize=48&fontAlignY=38&desc=Defending%20the%20codebase%20across%20the%20galaxy&descColor=c9d1d9&descSize=18&descAlignY=60&animation=fadeIn" alt="header" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0d1117,50:1b1464,100:6a11cb&text=Commander%20navin&fontColor=39ff14&fontSize=48&fontAlignY=38&desc=Defending%20the%20codebase%20across%20the%20galaxy&descColor=c9d1d9&descSize=18&descAlignY=60&animation=fadeIn" alt="header" width="100%"/>
 
-<a href="https://github.com/YOUR_USERNAME">
+<a href="https://github.com/navinskyy">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3500&pause=1000&color=39FF14&center=true&vCenter=true&width=600&lines=%3E+Initializing+launch+sequence...;%3E+Scanning+for+bugs+in+Sector+7...;%3E+Shipping+code+at+light+speed+%F0%9F%9A%80;%3E+All+systems+nominal.+Ready+for+mission." alt="Typing SVG" />
 </a>
 
