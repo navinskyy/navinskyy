@@ -63,13 +63,13 @@
 
 <div align="center">
 
-<a href="https://www.linkedin.com/in/YOUR_LINKEDIN">
+<a href="in/navin-llanes">
   <img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=00d4ff" alt="LinkedIn"/>
 </a>
-<a href="mailto:you@example.com">
+<a href="navinbyronllanes@gmail.com">
   <img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=39ff14" alt="Email"/>
 </a>
-<a href="https://YOUR_PORTFOLIO.com">
+<a href="[https://YOUR_PORTFOLIO.com](https://navinbyron-llanes.netlify.app)">
   <img src="https://img.shields.io/badge/Portfolio-0d1117?style=for-the-badge&logo=googlechrome&logoColor=c084fc" alt="Portfolio"/>
 </a>
 
