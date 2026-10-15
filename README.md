@@ -40,28 +40,6 @@
 
 <br/>
 
-## 🧰 &nbsp;SHIP SYSTEMS
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nodejs,python,git,github,vscode&theme=dark" alt="tech stack"/>
-
-</div>
-
-> 🔧 Swap the icons by editing the list after `?i=`. Full list of names: [skillicons.dev](https://skillicons.dev)
-
-<br/>
-
-## 🌌 &nbsp;ACTIVE MISSIONS
-
-| Mission | Status | Description |
-| :-- | :--: | :-- |
-| 🚀 **Project Alpha** | 🟢 Active | Short description of your main project |
-| 🛰️ **Project Beta** | 🟡 In progress | Something you're building or experimenting with |
-| 🔭 **Learning Quest** | 🔵 Exploring | A skill or tech you're picking up |
-
-<br/>
-
 ## 📡 &nbsp;OPEN COMMS CHANNEL
 
 <div align="center">
