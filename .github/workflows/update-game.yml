@@ -1,23 +1,49 @@
-name: Update Space Shooter Game
+name: Update Spidey Profile
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Daily at midnight UTC
+    - cron: '0 16 * * *'  # 16:00 UTC = 12:00 AM Manila (UTC+8), daily
   workflow_dispatch:      # Lets you run it manually
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/update-game.yml'
 
 permissions:
   contents: write
 
 jobs:
-  update-game:
+  update-profile:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-        with:
-          fetch-depth: 2  # Important, don't remove
 
-      - uses: czl9707/gh-space-shooter@v2
+      - uses: actions/setup-python@v5
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          output-path: 'game.gif'
-          strategy: 'random'
+          python-version: '3.12'
+
+      - run: pip install pillow
+
+      - name: Generate Spider-Man stats card
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_spider_card.py
+
+      - name: Generate web-shooter game
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_web_game.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing changed"
+            exit 0
+          fi
+          git commit -m "🕷️ Daily web update: stats + thwip log"
+          git pull --rebase origin main
+          git push

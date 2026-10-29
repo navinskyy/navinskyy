@@ -1,51 +1,62 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0d1117,50:1b1464,100:6a11cb&text=Commander%20navin&fontColor=39ff14&fontSize=48&fontAlignY=38&desc=Defending%20the%20codebase%20across%20the%20galaxy&descColor=c9d1d9&descSize=18&descAlignY=60&animation=fadeIn" alt="header" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0b1d4f,50:8b0f14,100:e23636&text=Spider-Navin&fontColor=ffffff&fontSize=56&fontAlignY=38&desc=Your%20friendly%20neighborhood%20developer&descColor=ffd6d6&descSize=18&descAlignY=60&animation=fadeIn" alt="header" width="100%"/>
 
 <a href="https://github.com/navinskyy">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3500&pause=1000&color=39FF14&center=true&vCenter=true&width=600&lines=%3E+Initializing+launch+sequence...;%3E+Scanning+for+bugs+in+Sector+7...;%3E+Shipping+code+at+light+speed+%F0%9F%9A%80;%3E+All+systems+nominal.+Ready+for+mission." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3500&pause=1000&color=E23636&center=true&vCenter=true&width=640&lines=%F0%9F%95%B7%EF%B8%8F+Spider-sense+tingling...+a+bug+nearby;%F0%9F%95%B8%EF%B8%8F+Thwip!+Bug+webbed+and+patched;%F0%9F%8F%99%EF%B8%8F+Swinging+through+the+codebase;%E2%9A%A1+With+great+power+comes+great+commits" alt="Typing SVG" />
 </a>
 
 <br/>
 
-<img src="https://img.shields.io/badge/STATUS-ONLINE-39ff14?style=for-the-badge&labelColor=0d1117" alt="status"/>
-<img src="https://img.shields.io/badge/RANK-CAPTAIN-6a11cb?style=for-the-badge&labelColor=0d1117" alt="rank"/>
-<img src="https://img.shields.io/badge/FUEL-COFFEE-00d4ff?style=for-the-badge&labelColor=0d1117" alt="fuel"/>
+<img src="https://img.shields.io/badge/SPIDER--SENSE-TINGLING-e23636?style=for-the-badge&labelColor=0b1d4f" alt="spider-sense"/>
+<img src="https://img.shields.io/badge/WEB_FLUID-FULL-2b5cd6?style=for-the-badge&labelColor=0b1d4f" alt="web fluid"/>
+<img src="https://img.shields.io/badge/FUEL-COFFEE-e23636?style=for-the-badge&labelColor=0b1d4f" alt="fuel"/>
+<img src="https://komarev.com/ghpvc/?username=navinskyy&label=CITIZENS%20SAVED&color=e23636&style=for-the-badge" alt="profile views"/>
 
 </div>
 
 <br/>
 
-## 🛰️ &nbsp;MISSION BRIEFING
+## 🕷️ &nbsp;SECRET IDENTITY & DAILY BUGLE STATS
+
+*Auto-refreshed every night at 12:00 AM (Manila) by GitHub Actions.*
 
 <div align="center">
-  <img src="mission-briefing.svg" alt="Mission briefing terminal card" width="100%"/>
+  <img src="spider-card.svg" alt="Spider-Man themed profile card with live GitHub stats and contribution web" width="100%"/>
 </div>
 
 <br/>
 
-## 🎮 &nbsp;BATTLE LOG
-
-*Every contribution is an enemy. Every commit is a laser shot. Updated daily.*
+## 🔥 &nbsp;WEB-SLINGING STREAK
 
 <div align="center">
-  <img src="game.gif" alt="My GitHub contribution graph as a space shooter" width="100%"/>
+  <img src="https://streak-stats.demolab.com/?user=navinskyy&theme=dark&background=0A0B14&border=E23636&ring=E23636&fire=E23636&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=E23636&sideLabels=6F97FF&dates=9AA3C7&stroke=2B5CD6&border_radius=14&timezone=Asia/Manila" alt="GitHub streak" width="100%"/>
 </div>
 
 <br/>
 
-## 📡 &nbsp;OPEN COMMS CHANNEL
+## 🕸️ &nbsp;THWIP LOG
+
+*Every contribution is a villain. Spidey webs up every last one. Rebuilt daily at midnight.*
+
+<div align="center">
+  <img src="game.gif" alt="A web-slinger shooting webs at my GitHub contribution graph" width="100%"/>
+</div>
+
+<br/>
+
+## 📡 &nbsp;SIGNAL THE SPIDER
 
 <div align="center">
 
-<a href="https://in/navin-llanes">
-  <img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=00d4ff" alt="LinkedIn"/>
+<a href="https://www.linkedin.com/in/navin-llanes">
+  <img src="https://img.shields.io/badge/LinkedIn-0b1d4f?style=for-the-badge&logo=linkedin&logoColor=ffffff" alt="LinkedIn"/>
 </a>
-<a href="navinbyronllanes@gmail.com">
-  <img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=39ff14" alt="Email"/>
+<a href="mailto:navinbyronllanes@gmail.com">
+  <img src="https://img.shields.io/badge/Email-e23636?style=for-the-badge&logo=gmail&logoColor=ffffff" alt="Email"/>
 </a>
 <a href="https://navinbyron-llanes.netlify.app">
-  <img src="https://img.shields.io/badge/Portfolio-0d1117?style=for-the-badge&logo=googlechrome&logoColor=c084fc" alt="Portfolio"/>
+  <img src="https://img.shields.io/badge/Portfolio-0b1d4f?style=for-the-badge&logo=googlechrome&logoColor=ffffff" alt="Portfolio"/>
 </a>
 
 </div>
@@ -54,8 +65,8 @@
 
 <div align="center">
 
-<sub>⭐ *"In space, no one can hear you git push."* ⭐</sub>
+<sub>🕷️ *"With great power comes great responsibility... to write tests."* 🕷️</sub>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:6a11cb,50:1b1464,100:0d1117&section=footer" alt="footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:e23636,50:8b0f14,100:0b1d4f&section=footer" alt="footer" width="100%"/>
 
 </div>
