@@ -40,6 +40,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/generate_web_game.py
 
+      # browsers cache images by URL; a new stamp each run makes them fetch the fresh ones
+      - name: Stamp image links
+        run: sed -i -E "s/\.(svg|gif)\?v=[0-9]+/.\1?v=$(TZ=Asia/Manila date +%Y%m%d%H%M)/g" README.md
+
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"

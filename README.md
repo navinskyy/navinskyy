@@ -22,7 +22,7 @@
 *Auto-refreshed every night at 12:00 AM (Manila) by GitHub Actions.*
 
 <div align="center">
-  <img src="spider-card.svg" alt="Spider-Man themed profile card with live GitHub stats and contribution web" width="100%"/>
+  <img src="spider-card.svg?v=0" alt="Spider-Man themed profile card with live GitHub stats and contribution web" width="100%"/>
 </div>
 
 <br/>
@@ -30,7 +30,7 @@
 ## 🔥 &nbsp;WEB-SLINGING STATS
 
 <div align="center">
-  <img src="spider-stats.svg" alt="Contributions, streaks, all-time total and top languages" width="100%"/>
+  <img src="spider-stats.svg?v=0" alt="Contributions, streaks, all-time total and top languages" width="100%"/>
 </div>
 
 <br/>
@@ -40,7 +40,7 @@
 *Every contribution is a villain. Spidey webs up every last one. Rebuilt daily at midnight.*
 
 <div align="center">
-  <img src="thwip.gif" alt="A web-slinger shooting webs at my GitHub contribution graph" width="100%"/>
+  <img src="thwip.gif?v=0" alt="A web-slinger shooting webs at my GitHub contribution graph" width="100%"/>
 </div>
 
 <br/>
