@@ -1,17 +1,17 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0b1d4f,50:8b0f14,100:e23636&text=Spider-Navin&fontColor=ffffff&fontSize=56&fontAlignY=38&desc=Your%20friendly%20neighborhood%20developer&descColor=ffd6d6&descSize=18&descAlignY=60&animation=fadeIn" alt="header" width="100%"/>
+<img src="banner.svg?v=0" alt="Spider-Navin: Brand New Commit" width="100%"/>
 
 <a href="https://github.com/navinskyy">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3500&pause=1000&color=E23636&center=true&vCenter=true&width=640&lines=%F0%9F%95%B7%EF%B8%8F+Spider-sense+tingling...+a+bug+nearby;%F0%9F%95%B8%EF%B8%8F+Thwip!+Bug+webbed+and+patched;%F0%9F%8F%99%EF%B8%8F+Swinging+through+the+codebase;%E2%9A%A1+With+great+power+comes+great+commits" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3500&pause=1000&color=FCD11A&center=true&vCenter=true&width=640&lines=%F0%9F%95%B7%EF%B8%8F+Spider-sense+tingling...+a+bug+nearby;%F0%9F%95%B8%EF%B8%8F+Thwip!+Bug+webbed+and+patched;%F0%9F%8F%99%EF%B8%8F+Swinging+through+the+codebase;%E2%9A%A1+With+great+power+comes+great+commits" alt="Typing SVG" />
 </a>
 
 <br/>
 
-<img src="https://img.shields.io/badge/SPIDER--SENSE-TINGLING-e23636?style=for-the-badge&labelColor=0b1d4f" alt="spider-sense"/>
-<img src="https://img.shields.io/badge/WEB_FLUID-FULL-2b5cd6?style=for-the-badge&labelColor=0b1d4f" alt="web fluid"/>
-<img src="https://img.shields.io/badge/FUEL-COFFEE-e23636?style=for-the-badge&labelColor=0b1d4f" alt="fuel"/>
-<img src="https://komarev.com/ghpvc/?username=navinskyy&label=CITIZENS%20SAVED&color=e23636&style=for-the-badge" alt="profile views"/>
+<img src="https://img.shields.io/badge/SPIDER--SENSE-TINGLING-d7090d?style=for-the-badge&labelColor=132a7a" alt="spider-sense"/>
+<img src="https://img.shields.io/badge/WEB_FLUID-FULL-1f4bbf?style=for-the-badge&labelColor=132a7a" alt="web fluid"/>
+<img src="https://img.shields.io/badge/FUEL-COFFEE-fcd11a?style=for-the-badge&labelColor=132a7a" alt="fuel"/>
+<img src="https://komarev.com/ghpvc/?username=navinskyy&label=CITIZENS%20SAVED&color=d7090d&style=for-the-badge" alt="profile views"/>
 
 </div>
 
@@ -50,13 +50,13 @@
 <div align="center">
 
 <a href="https://www.linkedin.com/in/navin-llanes">
-  <img src="https://img.shields.io/badge/LinkedIn-0b1d4f?style=for-the-badge&logo=linkedin&logoColor=ffffff" alt="LinkedIn"/>
+  <img src="https://img.shields.io/badge/LinkedIn-1f4bbf?style=for-the-badge&logo=linkedin&logoColor=ffffff" alt="LinkedIn"/>
 </a>
 <a href="mailto:navinbyronllanes@gmail.com">
-  <img src="https://img.shields.io/badge/Email-e23636?style=for-the-badge&logo=gmail&logoColor=ffffff" alt="Email"/>
+  <img src="https://img.shields.io/badge/Email-d7090d?style=for-the-badge&logo=gmail&logoColor=ffffff" alt="Email"/>
 </a>
 <a href="https://navinbyron-llanes.netlify.app">
-  <img src="https://img.shields.io/badge/Portfolio-0b1d4f?style=for-the-badge&logo=googlechrome&logoColor=ffffff" alt="Portfolio"/>
+  <img src="https://img.shields.io/badge/Portfolio-fcd11a?style=for-the-badge&logo=googlechrome&logoColor=132a7a" alt="Portfolio"/>
 </a>
 
 </div>
@@ -67,6 +67,6 @@
 
 <sub>🕷️ *"With great power comes great responsibility... to write tests."* 🕷️</sub>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:e23636,50:8b0f14,100:0b1d4f&section=footer" alt="footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:d7090d,50:1f4bbf,100:132a7a&section=footer" alt="footer" width="100%"/>
 
 </div>

@@ -17,14 +17,18 @@ USER = os.environ.get("GH_USER", "navinskyy")
 OUT = os.environ.get("CARD_PATH", "spider-card.svg")
 MANILA = dt.timezone(dt.timedelta(hours=8))
 
-RED = "#e23636"
-RED_DARK = "#8b0f14"
-BLUE = "#2b5cd6"
-BLUE_DARK = "#0b1d4f"
-BG = "#0a0b14"
-PANEL = "#11142a"
-TEXT = "#f1f1f5"
-MUTED = "#9aa3c7"
+# "Brand New Day" palette: red faces, blue extrusion, light-blue rim, yellow titles
+RED = "#d7090d"
+RED_DARK = "#7e0609"
+BLUE = "#1f4bbf"
+BLUE_LIGHT = "#3d86f0"
+BLUE_DARK = "#132a7a"
+YELLOW = "#fcd11a"
+BG = "#060a1a"
+PANEL = "#0d1533"
+TEXT = "#f5f6ff"
+MUTED = "#a8b6e6"
+HEAT = ["#16204a", "#4a0a14", RED_DARK, "#b0080c", RED]
 
 # Spider emblem, 75 x 123 units, centred on x=0 with the leg tips at y=0.
 # Right-hand legs are drawn once and mirrored for the left.
@@ -160,15 +164,8 @@ def web_bg(cx, cy, r, rings, spokes, color, opacity):
 
 def heat_color(n, peak):
     if n == 0:
-        return "#1b1f3a"
-    t = n / peak
-    if t < 0.25:
-        return "#5a1a2a"
-    if t < 0.5:
-        return RED_DARK
-    if t < 0.75:
-        return "#c0242b"
-    return RED
+        return HEAT[0]
+    return HEAT[min(4, 1 + int(4 * n / (peak + 1)))]
 
 
 def heatmap(days, x0, y0):
@@ -219,7 +216,7 @@ def section_title(y, title, tag):
             f'<rect width="6" height="22" rx="2" fill="{RED}"/>'
             f'<text x="16" y="17" class="h2">{escape(title)}</text>'
             f'<text x="736" y="17" text-anchor="end" class="tag">{tag}</text>'
-            f'<line x1="0" y1="32" x2="736" y2="32" stroke="{BLUE}" stroke-opacity="0.35"/></g>')
+            f'<line x1="0" y1="32" x2="736" y2="32" stroke="{BLUE_LIGHT}" stroke-opacity="0.35"/></g>')
 
 
 def render(s):
@@ -230,11 +227,11 @@ def render(s):
     svg = [f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Spider-Man themed profile card for {USER}">
 <style>
   text {{ font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: {TEXT}; }}
-  .h1 {{ font-size: 30px; font-weight: 800; letter-spacing: 1px; }}
+  .h1 {{ font-size: 34px; font-family: Impact, 'Arial Black', sans-serif; letter-spacing: 1.5px; }}
   .h2 {{ font-size: 15px; font-weight: 800; letter-spacing: 2.5px; }}
   .tag {{ font-size: 11px; fill: {MUTED}; letter-spacing: 2px; font-family: 'Fira Code', Consolas, monospace; }}
   .sub {{ font-size: 14px; fill: {MUTED}; }}
-  .key {{ font-size: 10.5px; fill: {RED}; letter-spacing: 1.8px; font-weight: 700; }}
+  .key {{ font-size: 10.5px; fill: {YELLOW}; letter-spacing: 1.8px; font-weight: 700; }}
   .val {{ font-size: 14px; }}
   .num {{ font-size: 24px; font-weight: 800; }}
   .lbl {{ font-size: 10px; fill: {MUTED}; letter-spacing: 1.5px; }}
@@ -247,7 +244,7 @@ def render(s):
 </style>
 <defs>
   <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="{RED_DARK}"/><stop offset=".55" stop-color="{RED}"/><stop offset="1" stop-color="{BLUE_DARK}"/>
+    <stop offset="0" stop-color="{BLUE_DARK}"/><stop offset=".6" stop-color="{BLUE}"/><stop offset="1" stop-color="{RED_DARK}"/>
   </linearGradient>
   <linearGradient id="bar" x1="0" x2="1"><stop offset="0" stop-color="{RED}"/><stop offset="1" stop-color="{BLUE}"/></linearGradient>
   <clipPath id="card"><rect width="{W}" height="{H}" rx="18"/></clipPath>
@@ -259,19 +256,23 @@ def render(s):
 
 <!-- header -->
 <rect width="{W}" height="150" fill="url(#hdr)"/>
-{web_bg(W - 60, -20, 210, 5, 14, "#000", 0.35)}
+{web_bg(W - 60, -20, 210, 5, 14, BLUE_LIGHT, 0.35)}
 <g class="swing">
   <line x1="700" y1="0" x2="700" y2="50" stroke="#fff" stroke-width="1.5" opacity=".8"/>
-  <g transform="translate(700,14)" fill="#111">{SPIDER_EMBLEM}</g>
+  <g transform="translate(700,14)" fill="{RED}" stroke="#000" stroke-width="1.2">{SPIDER_EMBLEM}</g>
 </g>
 <g transform="translate(32,34)">
   <circle cx="40" cy="40" r="40" fill="{BG}" stroke="#fff" stroke-width="3"/>
   {web_bg(40, 40, 38, 3, 8, RED, 0.6)}
   <text x="40" y="51" text-anchor="middle" font-size="30" font-weight="900" fill="#fff">NL</text>
 </g>
-<text x="132" y="62" class="tag" fill="#fff" style="fill:#ffd6d6">FRIENDLY NEIGHBORHOOD DEVELOPER</text>
-<text x="132" y="96" class="h1">{escape(USER)}</text>
-<text x="132" y="122" class="sub" style="fill:#ffe9e9">AI Security Intern @ RivanAI  ·  BSCS '27 · LPU Manila</text>
+<text x="132" y="62" class="tag" style="fill:{YELLOW}">FRIENDLY NEIGHBORHOOD DEVELOPER</text>
+<g class="h1" transform="translate(132,98) skewX(-8)" stroke-linejoin="round">
+  <text x="4" y="4" style="fill:{BLUE_DARK}" stroke="#000" stroke-width="1.5">{escape(USER)}</text>
+  <text x="2" y="2" style="fill:{BLUE}">{escape(USER)}</text>
+  <text style="fill:{RED}" stroke="{BLUE_LIGHT}" stroke-width="1.2">{escape(USER)}</text>
+</g>
+<text x="132" y="122" class="sub" style="fill:{TEXT}">AI Security Intern @ RivanAI  ·  BSCS '27 · LPU Manila</text>
 
 <!-- spider-sense bar -->
 <g transform="translate(32,168)">
@@ -318,7 +319,7 @@ def render(s):
 <g transform="translate(32,760)">
   <rect width="736" height="40" rx="10" fill="{PANEL}"/>
   <text x="20" y="25" class="tag" style="fill:{TEXT}">CURRENT STREAK <tspan fill="{RED}" font-weight="800">{cur}d</tspan></text>
-  <text x="368" y="25" text-anchor="middle" class="tag" style="fill:{TEXT}">LONGEST STREAK <tspan fill="{BLUE}" font-weight="800" style="fill:#6f97ff">{longest}d</tspan></text>
+  <text x="368" y="25" text-anchor="middle" class="tag" style="fill:{TEXT}">LONGEST STREAK <tspan fill="{BLUE}" font-weight="800" style="fill:{BLUE_LIGHT}">{longest}d</tspan></text>
   <text x="716" y="25" text-anchor="end" class="tag" style="fill:{TEXT}">REPOS HELPED <tspan fill="{RED}" font-weight="800">{s["contributed_to"]}</tspan></text>
 </g>
 <text x="40" y="828" class="key">CONTRIBUTION WEB  ·  LAST 12 MONTHS</text>
@@ -327,10 +328,10 @@ def render(s):
     svg.append(f'''
 <g transform="translate(40,945)" class="tag">
   <text x="0" y="10">LESS</text>
-  <rect x="38" y="0" width="11" height="11" rx="2.5" fill="#1b1f3a"/>
-  <rect x="53" y="0" width="11" height="11" rx="2.5" fill="#5a1a2a"/>
+  <rect x="38" y="0" width="11" height="11" rx="2.5" fill="{HEAT[0]}"/>
+  <rect x="53" y="0" width="11" height="11" rx="2.5" fill="{HEAT[1]}"/>
   <rect x="68" y="0" width="11" height="11" rx="2.5" fill="{RED_DARK}"/>
-  <rect x="83" y="0" width="11" height="11" rx="2.5" fill="#c0242b"/>
+  <rect x="83" y="0" width="11" height="11" rx="2.5" fill="{HEAT[3]}"/>
   <rect x="98" y="0" width="11" height="11" rx="2.5" fill="{RED}"/>
   <text x="116" y="10">MORE</text>
 </g>

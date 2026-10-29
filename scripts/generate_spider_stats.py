@@ -14,12 +14,13 @@ import sys
 import urllib.request
 from html import escape
 
-from generate_spider_card import BG, BLUE, BLUE_DARK, MANILA, MUTED, PANEL, RED, RED_DARK, TEXT, USER, web_bg
+from generate_spider_card import (BG, BLUE, BLUE_DARK, BLUE_LIGHT, MANILA, MUTED, PANEL, RED, RED_DARK, TEXT, USER,
+                                  SPIDER_EMBLEM, YELLOW, web_bg)
 
 OUT = os.environ.get("STATS_PATH", "spider-stats.svg")
 
 # language bar colours: spider palette instead of GitHub's rainbow
-LANG_COLORS = [RED, BLUE, "#f1f1f5", RED_DARK, "#6f97ff", "#ff8a8a", "#1d3f9e", "#9aa3c7"]
+LANG_COLORS = [RED, BLUE, YELLOW, BLUE_LIGHT, "#ffffff", RED_DARK, "#ff6b4a", MUTED]
 
 
 def gql(query, variables):
@@ -170,6 +171,7 @@ ICONS = {
 
 def stat_col(x, icon, label, big, unit, sub):
     unit_svg = f'<tspan class="unit" dx="6">{unit}</tspan>' if unit else ""
+    ghost_unit = f'<tspan class="unit" dx="6" style="fill:none">{unit}</tspan>' if unit else ""
     return f'''
 <g transform="translate({x},0)">
   <g transform="translate({-78},38)">
@@ -178,7 +180,11 @@ def stat_col(x, icon, label, big, unit, sub):
     <g transform="translate(3,3)">{ICONS[icon]}</g>
     <text x="40" y="21" class="label">{escape(label)}</text>
   </g>
-  <text x="0" y="122" text-anchor="middle" class="big">{big}{unit_svg}</text>
+  <g transform="skewX(-6)">
+    <text x="4" y="126" text-anchor="middle" class="big" style="fill:{BLUE_DARK}" stroke="#000" stroke-width="1.2">{big}{ghost_unit}</text>
+    <text x="2" y="124" text-anchor="middle" class="big" style="fill:{BLUE}">{big}{ghost_unit}</text>
+    <text x="0" y="122" text-anchor="middle" class="big" stroke="{BLUE_LIGHT}" stroke-width="1">{big}{unit_svg}</text>
+  </g>
   <text x="0" y="150" text-anchor="middle" class="sub">{escape(sub)}</text>
 </g>'''
 
@@ -220,40 +226,35 @@ def render(s):
                       f'<text x="{lx + 16}" y="{ly}" class="lang">{escape(name)} <tspan class="pct">{pct_s}</tspan></text>')
 
     dividers = "".join(
-        f'<line x1="{col_w * i:.0f}" y1="34" x2="{col_w * i:.0f}" y2="160" stroke="{RED}" stroke-opacity=".45" '
+        f'<line x1="{col_w * i:.0f}" y1="34" x2="{col_w * i:.0f}" y2="160" stroke="{BLUE_LIGHT}" stroke-opacity=".5" '
         f'stroke-dasharray="1 5" stroke-linecap="round" stroke-width="2"/>' for i in range(1, 4))
 
-    # dangling spider on a thread, top right
+    # dangling spider emblem on a thread, top right
     spider = f'''
 <g class="swing">
-  <line x1="784" y1="0" x2="784" y2="22" stroke="#fff" stroke-opacity=".7"/>
-  <g transform="translate(784,30)">
-    <ellipse rx="5" ry="6.5" fill="#111" stroke="{RED}" stroke-width=".8"/><circle cy="-8" r="3.5" fill="#111" stroke="{RED}" stroke-width=".8"/>
-    <g stroke="#ddd" stroke-width="1.1" fill="none" stroke-linecap="round">
-      <path d="M-4-3-10-8-11-13M4-3 10-8 11-13M-5 0h-7l-2-3M5 0h7l2-3M-4 3-9 8-10 12M4 3 9 8 10 12"/>
-    </g>
-  </g>
+  <line x1="770" y1="0" x2="770" y2="22" stroke="#fff" stroke-opacity=".7"/>
+  <g transform="translate(770,6) scale(.36)" fill="{RED}" stroke="#000" stroke-width="2">{SPIDER_EMBLEM}</g>
 </g>'''
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="GitHub stats for {USER}: {m["year_total"]} contributions in the last year, current streak {m["cur"][0]} days, longest streak {m["best"][0]} days">
 <style>
   text {{ font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: {TEXT}; }}
   .label {{ font-size: 16px; font-weight: 700; }}
-  .big {{ font-size: 50px; font-weight: 900; fill: {RED}; letter-spacing: -1px; }}
-  .unit {{ font-size: 17px; font-weight: 600; fill: {MUTED}; letter-spacing: 0; }}
+  .big {{ font-size: 54px; font-family: Impact, 'Arial Black', sans-serif; fill: {RED}; letter-spacing: 1px; }}
+  .unit {{ font-size: 18px; fill: {YELLOW}; stroke: none; letter-spacing: 1px; }}
   .sub {{ font-size: 13px; fill: {MUTED}; }}
   .mid {{ font-size: 14px; }}
-  .h {{ font-size: 15px; font-weight: 800; }}
+  .h {{ font-size: 15px; font-weight: 800; fill: {YELLOW}; letter-spacing: 1px; }}
   .note {{ font-size: 12px; fill: {MUTED}; }}
   .lang {{ font-size: 13px; }}
   .pct {{ fill: {MUTED}; }}
   .foot {{ font-family: 'Fira Code', Consolas, monospace; font-size: 10.5px; fill: {MUTED}; }}
-  .swing {{ transform-origin: 784px 0; animation: swing 3.5s ease-in-out infinite; }}
+  .swing {{ transform-origin: 770px 0; animation: swing 3.5s ease-in-out infinite; }}
   @keyframes swing {{ 0%,100% {{ transform: rotate(-8deg); }} 50% {{ transform: rotate(8deg); }} }}
 </style>
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#1a0a10"/><stop offset=".5" stop-color="{BG}"/><stop offset="1" stop-color="#0a1230"/>
+    <stop offset="0" stop-color="{BG}"/><stop offset="1" stop-color="#10235e"/>
   </linearGradient>
   <linearGradient id="iconShine" x1="0" y1="0" x2="0" y2="1">
     <stop offset="0" stop-color="#fff" stop-opacity=".25"/><stop offset="1" stop-color="#000" stop-opacity=".15"/>
@@ -281,7 +282,7 @@ def render(s):
 {"".join(legend)}
 <text x="{W - 24}" y="{H - 10}" text-anchor="end" class="foot">updated {now:%Y-%m-%d} · from github.com/{USER}</text>
 </g>
-<rect x=".75" y=".75" width="{W - 1.5}" height="{H - 1.5}" rx="13.5" fill="none" stroke="{RED}" stroke-opacity=".45" stroke-width="1.5"/>
+<rect x=".75" y=".75" width="{W - 1.5}" height="{H - 1.5}" rx="13.5" fill="none" stroke="{BLUE_LIGHT}" stroke-opacity=".6" stroke-width="1.5"/>
 </svg>
 '''
 

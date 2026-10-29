@@ -10,6 +10,7 @@ import sys
 
 from PIL import Image, ImageDraw, ImageFont
 
+import generate_spider_card as pal
 from generate_spider_card import fetch_stats, sample_stats
 
 OUT = os.environ.get("GAME_PATH", "thwip.gif")
@@ -21,22 +22,26 @@ GX, GY = 24, 46           # grid origin
 GROUND = 222              # y of the rooftop line
 HERO_Y = GROUND - 2       # hero's feet
 
-BG = (10, 11, 20)
-EMPTY = (27, 31, 58)
-SKY_WEB = (30, 40, 85)
-CITY = (17, 21, 44)
-CITY_LIT = (60, 70, 120)
-RED = (226, 54, 54)
-RED_DARK = (139, 15, 20)
-BLUE = (43, 92, 214)
-BLUE_DARK = (11, 29, 79)
-WHITE = (240, 240, 245)
-WEB = (225, 228, 240)
-COCOON = (150, 155, 175)
-MUTED = (154, 163, 199)
-YELLOW = (255, 210, 80)
+def rgb(hex_color):
+    return tuple(int(hex_color[i:i + 2], 16) for i in (1, 3, 5))
 
-VILLAIN_SHADES = [(90, 26, 42), RED_DARK, (192, 36, 43), RED]
+
+BG = rgb(pal.BG)
+EMPTY = rgb(pal.HEAT[0])
+SKY_WEB = (28, 52, 120)
+CITY = (14, 26, 70)
+CITY_LIT = (70, 110, 200)
+RED = rgb(pal.RED)
+RED_DARK = rgb(pal.RED_DARK)
+BLUE = rgb(pal.BLUE)
+BLUE_DARK = rgb(pal.BLUE_DARK)
+WHITE = (245, 246, 255)
+WEB = (230, 236, 255)
+COCOON = (130, 150, 200)
+MUTED = rgb(pal.MUTED)
+YELLOW = rgb(pal.YELLOW)
+
+VILLAIN_SHADES = [rgb(c) for c in pal.HEAT[1:]]
 
 
 def font(size):
@@ -161,7 +166,7 @@ def build(stats):
     bd = ImageDraw.Draw(base)
     draw_corner_web(bd)
     draw_city(bd)
-    bd.text((GX, 14), "THWIP LOG", font=F_TITLE, fill=RED)
+    bd.text((GX, 14), "THWIP LOG", font=F_TITLE, fill=YELLOW)
     bd.text((GX + 100, 17), "// every contribution is a villain", font=F_SMALL, fill=MUTED)
 
     frames, durations = [], []
