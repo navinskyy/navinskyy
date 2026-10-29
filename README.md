@@ -30,7 +30,7 @@
 ## 🔥 &nbsp;WEB-SLINGING STREAK
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com/?user=navinskyy&theme=dark&background=0A0B14&border=E23636&ring=E23636&fire=E23636&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=E23636&sideLabels=6F97FF&dates=9AA3C7&stroke=2B5CD6&border_radius=14&timezone=Asia/Manila&v=0" alt="GitHub streak" width="100%"/>
+  <img src="https://streak-stats.demolab.com/?user=navinskyy&theme=dark&background=0A0B14&border=E23636&ring=E23636&fire=E23636&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=E23636&sideLabels=6F97FF&dates=9AA3C7&stroke=2B5CD6&border_radius=14&timezone=Asia/Manila&v=202610291428" alt="GitHub streak" width="100%"/>
 </div>
 
 <br/>
