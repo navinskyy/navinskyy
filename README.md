@@ -1,8 +1,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero.png?v=0"/>
-  <img src="assets/hero.gif?v=0" alt="Pixel-art night skyline: a red-and-blue web-slinger swings between rooftops under the moon beneath the title NAVINSKYY, Brand New Day." width="100%"/>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero.png?v=202610291528"/>
+  <img src="assets/hero.gif?v=202610291528" alt="Pixel-art night skyline: a red-and-blue web-slinger swings between rooftops under the moon beneath the title NAVINSKYY, Brand New Day." width="100%"/>
 </picture>
 
 ### *"Every great developer has an origin story."*
@@ -13,12 +13,12 @@ Building systems. Solving problems. Always improving.
 
 <br/>
 
-<img src="assets/act-1.png?v=0" alt="Act I: The Origin Story" width="100%"/>
+<img src="assets/act-1.png?v=202610291528" alt="Act I: The Origin Story" width="100%"/>
 
 <table>
 <tr>
 <td width="30%" align="center" valign="top">
-<img src="assets/portrait.png?v=0" alt="Pixel-art web-slinger crouched on a rooftop under the moon" width="100%"/>
+<img src="assets/portrait.png?v=202610291528" alt="Pixel-art web-slinger crouched on a rooftop under the moon" width="100%"/>
 <br/><sub><b>PLAYER 1 · NAVINSKYY</b></sub>
 </td>
 <td valign="top">
@@ -35,7 +35,7 @@ What I care about: systems that hold up when something goes wrong, documentation
 
 <br/>
 
-<img src="assets/act-2.png?v=0" alt="Act II: The Arsenal" width="100%"/>
+<img src="assets/act-2.png?v=202610291528" alt="Act II: The Arsenal" width="100%"/>
 
 Every hero needs gear. Here is mine, sorted by the kind of mission it gets used on.
 
@@ -58,19 +58,19 @@ Every hero needs gear. Here is mine, sorted by the kind of mission it gets used 
 
 <br/>
 
-<img src="assets/act-3.png?v=0" alt="Act III: The Daily Bugle" width="100%"/>
+<img src="assets/act-3.png?v=202610291528" alt="Act III: The Daily Bugle" width="100%"/>
 
 <div align="center">
-  <img src="assets/bugle-report.svg?v=202610291508" alt="The Daily Bugle developer intelligence report: contributions in the last 12 months, all-time total, public commits, private contributions, pull requests and public repositories." width="100%"/>
+  <img src="assets/bugle-report.svg?v=202610291528" alt="The Daily Bugle developer intelligence report: contributions in the last 12 months, all-time total, public commits, private contributions, pull requests and public repositories." width="100%"/>
   <br/><br/>
-  <img src="assets/bugle-activity.svg?v=202610291508" alt="Field report: contribution calendar for the last 12 months, current and longest streak, and top languages by code size." width="100%"/>
+  <img src="assets/bugle-activity.svg?v=202610291528" alt="Field report: contribution calendar for the last 12 months, current and longest streak, and top languages by code size." width="100%"/>
   <br/>
   <sub>Filed every night at 12:00 AM Manila time by a GitHub Action in this repo. The numbers come straight from the GitHub API, and private work appears only as counts.</sub>
 </div>
 
 <br/>
 
-<img src="assets/act-4.png?v=0" alt="Act IV: Friendly Neighborhood Missions" width="100%"/>
+<img src="assets/act-4.png?v=202610291528" alt="Act IV: Friendly Neighborhood Missions" width="100%"/>
 
 <table>
 <tr>
@@ -139,12 +139,12 @@ Every hero needs gear. Here is mine, sorted by the kind of mission it gets used 
 
 <br/>
 
-<img src="assets/act-5.png?v=0" alt="Act V: The Web of Activity" width="100%"/>
+<img src="assets/act-5.png?v=202610291528" alt="Act V: The Web of Activity" width="100%"/>
 
 <div align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/web-of-activity.png?v=0"/>
-    <img src="assets/web-of-activity.gif?v=0" alt="Pixel-art web of activity: a web-slinger zip-lines across the last 12 months of contributions and shoots a web at every day I contributed, lighting it red." width="100%"/>
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/web-of-activity.png?v=202610291528"/>
+    <img src="assets/web-of-activity.gif?v=202610291528" alt="Pixel-art web of activity: a web-slinger zip-lines across the last 12 months of contributions and shoots a web at every day I contributed, lighting it red." width="100%"/>
   </picture>
   <br/>
   <sub>Each lit square is a day I contributed. Rebuilt every night from the GitHub API.</sub>
@@ -152,7 +152,7 @@ Every hero needs gear. Here is mine, sorted by the kind of mission it gets used 
 
 <br/>
 
-<img src="assets/act-6.png?v=0" alt="Act VI: The Spider Signal" width="100%"/>
+<img src="assets/act-6.png?v=202610291528" alt="Act VI: The Spider Signal" width="100%"/>
 
 <div align="center">
 
@@ -164,6 +164,6 @@ Got a system that needs building, a lab that won't cooperate, or an internship o
 
 <br/><br/>
 
-<img src="assets/footer.png?v=0" alt="Ship with care. Own what you build. Come back better tomorrow." width="100%"/>
+<img src="assets/footer.png?v=202610291528" alt="Ship with care. Own what you build. Come back better tomorrow." width="100%"/>
 
 </div>
