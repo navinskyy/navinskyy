@@ -190,8 +190,8 @@ def render(s):
 
     cols = [
         ("web", "Contributions", m["year_total"], "", "in the last year"),
-        ("bolt", "Current streak", m["cur"][0], "days", fmt_range(m["cur"][1], m["cur"][2])),
-        ("mask", "Longest streak", m["best"][0], "days", fmt_range(m["best"][1], m["best"][2])),
+        ("bolt", "Current streak", m["cur"][0], "day" if m["cur"][0] == 1 else "days", fmt_range(m["cur"][1], m["cur"][2])),
+        ("mask", "Longest streak", m["best"][0], "day" if m["best"][0] == 1 else "days", fmt_range(m["best"][1], m["best"][2])),
         ("spider", "All-time", m["all_time"], "",
          f"since {dt.date.fromisoformat(m['first']):%b} {dt.date.fromisoformat(m['first']).day}, "
          f"{m['first'][:4]}" if m["first"] else "no contributions yet"),
