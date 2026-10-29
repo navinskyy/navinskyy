@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="340" viewBox="0 0 800 340" role="img" aria-label="GitHub stats for navinskyy: 202 contributions in the last year, current streak 1 days, longest streak 7 days">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="340" viewBox="0 0 800 340" role="img" aria-label="GitHub stats for navinskyy: 203 contributions in the last year, current streak 1 days, longest streak 7 days">
 <style>
   text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #f5f6ff; }
   .label { font-size: 16px; font-weight: 700; }
@@ -47,9 +47,9 @@
     <text x="40" y="21" class="label">Contributions</text>
   </g>
   <g transform="skewX(-6)">
-    <text x="4" y="126" text-anchor="middle" class="big" style="fill:#132a7a" stroke="#000" stroke-width="1.2">202</text>
-    <text x="2" y="124" text-anchor="middle" class="big" style="fill:#1f4bbf">202</text>
-    <text x="0" y="122" text-anchor="middle" class="big" stroke="#3d86f0" stroke-width="1">202</text>
+    <text x="4" y="126" text-anchor="middle" class="big" style="fill:#132a7a" stroke="#000" stroke-width="1.2">203</text>
+    <text x="2" y="124" text-anchor="middle" class="big" style="fill:#1f4bbf">203</text>
+    <text x="0" y="122" text-anchor="middle" class="big" stroke="#3d86f0" stroke-width="1">203</text>
   </g>
   <text x="0" y="150" text-anchor="middle" class="sub">in the last year</text>
 </g>
@@ -89,9 +89,9 @@
     <text x="40" y="21" class="label">All-time</text>
   </g>
   <g transform="skewX(-6)">
-    <text x="4" y="126" text-anchor="middle" class="big" style="fill:#132a7a" stroke="#000" stroke-width="1.2">203</text>
-    <text x="2" y="124" text-anchor="middle" class="big" style="fill:#1f4bbf">203</text>
-    <text x="0" y="122" text-anchor="middle" class="big" stroke="#3d86f0" stroke-width="1">203</text>
+    <text x="4" y="126" text-anchor="middle" class="big" style="fill:#132a7a" stroke="#000" stroke-width="1.2">204</text>
+    <text x="2" y="124" text-anchor="middle" class="big" style="fill:#1f4bbf">204</text>
+    <text x="0" y="122" text-anchor="middle" class="big" stroke="#3d86f0" stroke-width="1">204</text>
   </g>
   <text x="0" y="150" text-anchor="middle" class="sub">since May 21, 2023</text>
 </g>
@@ -100,7 +100,7 @@
 <text x="24" y="242" class="h">Top languages</text>
 <text x="776" y="242" text-anchor="end" class="note">by code size across original repositories</text>
 <rect x="24" y="252" width="752" height="12" rx="6" fill="#0d1533"/>
-<g clip-path="url(#barclip)"><rect x="24.00" y="252" width="545.25" height="12" fill="#d7090d"><title>JavaScript 72.5%</title></rect><rect x="569.25" y="252" width="82.88" height="12" fill="#1f4bbf"><title>CSS 11.0%</title></rect><rect x="652.13" y="252" width="61.07" height="12" fill="#fcd11a"><title>Python 8.1%</title></rect><rect x="713.20" y="252" width="29.87" height="12" fill="#3d86f0"><title>HTML 4.0%</title></rect><rect x="743.07" y="252" width="11.97" height="12" fill="#ffffff"><title>Astro 1.6%</title></rect><rect x="755.03" y="252" width="7.95" height="12" fill="#7e0609"><title>TypeScript 1.1%</title></rect><rect x="762.98" y="252" width="6.46" height="12" fill="#ff6b4a"><title>Shell 0.9%</title></rect><rect x="769.44" y="252" width="6.56" height="12" fill="#a8b6e6"><title>Other 0.9%</title></rect></g>
+<g clip-path="url(#barclip)"><rect x="24.00" y="252" width="545.26" height="12" fill="#d7090d"><title>JavaScript 72.5%</title></rect><rect x="569.26" y="252" width="82.88" height="12" fill="#1f4bbf"><title>CSS 11.0%</title></rect><rect x="652.14" y="252" width="61.05" height="12" fill="#fcd11a"><title>Python 8.1%</title></rect><rect x="713.20" y="252" width="29.87" height="12" fill="#3d86f0"><title>HTML 4.0%</title></rect><rect x="743.07" y="252" width="11.97" height="12" fill="#ffffff"><title>Astro 1.6%</title></rect><rect x="755.03" y="252" width="7.95" height="12" fill="#7e0609"><title>TypeScript 1.1%</title></rect><rect x="762.98" y="252" width="6.46" height="12" fill="#ff6b4a"><title>Shell 0.9%</title></rect><rect x="769.44" y="252" width="6.56" height="12" fill="#a8b6e6"><title>Other 0.9%</title></rect></g>
 <circle cx="29" cy="284" r="5" fill="#d7090d"/><text x="40" y="288" class="lang">JavaScript <tspan class="pct">72.5%</tspan></text><circle cx="219" cy="284" r="5" fill="#1f4bbf"/><text x="230" y="288" class="lang">CSS <tspan class="pct">11.0%</tspan></text><circle cx="409" cy="284" r="5" fill="#fcd11a"/><text x="420" y="288" class="lang">Python <tspan class="pct">8.1%</tspan></text><circle cx="599" cy="284" r="5" fill="#3d86f0"/><text x="610" y="288" class="lang">HTML <tspan class="pct">4.0%</tspan></text><circle cx="29" cy="306" r="5" fill="#ffffff"/><text x="40" y="310" class="lang">Astro <tspan class="pct">1.6%</tspan></text><circle cx="219" cy="306" r="5" fill="#7e0609"/><text x="230" y="310" class="lang">TypeScript <tspan class="pct">1.1%</tspan></text><circle cx="409" cy="306" r="5" fill="#ff6b4a"/><text x="420" y="310" class="lang">Shell <tspan class="pct">0.9%</tspan></text><circle cx="599" cy="306" r="5" fill="#a8b6e6"/><text x="610" y="310" class="lang">Other <tspan class="pct">0.9%</tspan></text>
 <text x="776" y="330" text-anchor="end" class="foot">updated 2026-10-29 · from github.com/navinskyy</text>
 </g>
