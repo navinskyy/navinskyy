@@ -1,4 +1,4 @@
-"""Generate game.gif: a Spider-Man style hero swings under your contribution
+"""Generate thwip.gif: a Spider-Man style hero swings under your contribution
 graph and webs up every day you contributed (each one is a villain).
 
 Run by .github/workflows/update-game.yml every day at 12:00 AM Manila time.
@@ -12,7 +12,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 from generate_spider_card import fetch_stats, sample_stats
 
-OUT = os.environ.get("GAME_PATH", "game.gif")
+OUT = os.environ.get("GAME_PATH", "thwip.gif")
 
 W, H = 840, 250
 CELL, GAP = 12, 3

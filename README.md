@@ -40,7 +40,7 @@
 *Every contribution is a villain. Spidey webs up every last one. Rebuilt daily at midnight.*
 
 <div align="center">
-  <img src="game.gif" alt="A web-slinger shooting webs at my GitHub contribution graph" width="100%"/>
+  <img src="thwip.gif" alt="A web-slinger shooting webs at my GitHub contribution graph" width="100%"/>
 </div>
 
 <br/>
