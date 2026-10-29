@@ -14,15 +14,15 @@ Building systems. Solving problems. Always improving.
 
 No radioactive spider here. My origin story is a terminal window and a lab that would not work until it did.
 
-I'm a **Computer Science student at the Lyceum of the Philippines University – Manila** (Class of 2027) and an **AI Security Intern at RivanAI**. Most of my recent work happens in security labs: catching attacks with Wazuh, automating the response with Shuffle, watching Cisco gear with Zabbix, and pulling evidence out of memory with Volatility. When I'm not in a lab, I build web apps people can use, like NursePrep.
+I'm a **Computer Science student at LPU – Manila** (Class of 2027) and an **AI Security Intern at RivanAI**. Most of my recent work happens in security labs: catching attacks with Wazuh, automating the response with Shuffle, watching Cisco gear with Zabbix, and pulling evidence out of memory with Volatility. When I'm not in a lab, I build web apps people can use, like NursePrep.
 
 What I care about: systems that hold up when something goes wrong, documentation the next person can follow, and getting a little better every day.
 
 <table>
 <tr><td valign="top" nowrap><b>Day job</b></td><td>AI Security Intern @ RivanAI</td></tr>
-<tr><td valign="top" nowrap><b>Academy</b></td><td>BS Computer Science · Lyceum of the Philippines University – Manila · Class of 2027 · Dean's Lister</td></tr>
+<tr><td valign="top" nowrap><b>Academy</b></td><td>BS Computer Science · LPU – Manila · Class of 2027 · Dean's Lister</td></tr>
 <tr><td valign="top" nowrap><b>Base of operations</b></td><td>Manila, Philippines</td></tr>
-<tr><td valign="top" nowrap><b>Team-ups</b></td><td>LPE Vice President Committee, UE Caloocan · Lyceum of the Philippines Esports</td></tr>
+<tr><td valign="top" nowrap><b>Team-ups</b></td><td>LPE VP Committee · LPU Esports</td></tr>
 <tr><td valign="top" nowrap><b>Training path</b></td><td>CompTIA A+ · CompTIA Security+ (SY0-701) · CCNA, following the course repos I've forked</td></tr>
 <tr><td valign="top" nowrap><b>Languages</b></td><td>English · Filipino</td></tr>
 </table>
