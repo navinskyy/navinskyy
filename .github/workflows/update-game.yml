@@ -30,14 +30,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/generate_spider_card.py
 
+      - name: Generate Spider-Man stats summary
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_spider_stats.py
+
       - name: Generate web-shooter game
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/generate_web_game.py
-
-      # GitHub caches external images for up to a day; a new URL forces a fresh streak card
-      - name: Refresh streak card URL
-        run: sed -i "s/&v=[0-9]*/\&v=$(TZ=Asia/Manila date +%Y%m%d%H%M)/" README.md
 
       - name: Commit changes
         run: |
