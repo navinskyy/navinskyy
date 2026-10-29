@@ -124,7 +124,7 @@ def bugle_report(s, m):
     rules += f'<path d="M{gx} {gy + row_h - 6}H{W - gx}" stroke="{HAIRLINE}"/>'
 
     title = (f'<title id="t">Daily Bugle report: {s["year_total"]} contributions in the last 12 months, '
-             f'{m["all_time"]} all-time, current streak {m["cur"][0]} days, longest {best[0]} days.</title>')
+             f'{m["all_time"]} all-time, current streak {plural(m["cur"][0], "day")}, longest {plural(best[0], "day")}.</title>')
     body = f'''
 {web(W, 0, 170, 90, 180, spokes=6, rings=5, opacity=.09)}
 {label(f"VOL. {today.year}  ·  NO. {today.timetuple().tm_yday:03d}", 32, 36, 10, SILVER, spacing=1.5)}
@@ -213,7 +213,7 @@ def bugle_activity(s, m):
         legend_l.append(label(f"{pct:.1f}%" if pct >= .1 else "<0.1%", lx + bw / 3 - 22, lyy, 12, SILVER, "end"))
 
     title = (f'<title id="t">Field report: contribution calendar for the last 12 months, current streak '
-             f'{cur[0]} days, longest streak {best[0]} days, and top languages by code size.</title>')
+             f'{plural(cur[0], "day")}, longest streak {plural(best[0], "day")}, and top languages by code size.</title>')
     body = f'''
 {text("FIELD REPORT", "serif", 22, 32, 46, tracking=1, attrs=f'fill="{WHITE}"')}
 {label("LAST 12 MONTHS", W - 32, 44, 10.5, RED_GLOW, "end", 700, 2)}
