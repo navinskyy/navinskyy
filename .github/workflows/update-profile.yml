@@ -1,4 +1,4 @@
-name: Update Spidey Profile
+name: Update Profile Reports
 
 on:
   schedule:
@@ -8,7 +8,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/**'
-      - '.github/workflows/update-game.yml'
+      - '.github/workflows/update-profile.yml'
 
 permissions:
   contents: write
@@ -23,22 +23,11 @@ jobs:
         with:
           python-version: '3.12'
 
-      - run: pip install pillow
-
-      - name: Generate Spider-Man stats card
+      # Daily Bugle reports + Web of Activity (standard library only)
+      - name: Generate reports
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/generate_spider_card.py
-
-      - name: Generate Spider-Man stats summary
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/generate_spider_stats.py
-
-      - name: Generate web-shooter game
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/generate_web_game.py
+        run: python scripts/generate_reports.py
 
       # browsers cache images by URL; a new stamp each run makes them fetch the fresh ones
       - name: Stamp image links
@@ -53,6 +42,6 @@ jobs:
             echo "Nothing changed"
             exit 0
           fi
-          git commit -m "🕷️ Daily web update: stats + thwip log"
+          git commit -m "🕷️ Daily Bugle: nightly report"
           git pull --rebase origin main
           git push
