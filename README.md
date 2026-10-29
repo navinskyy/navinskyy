@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg?v=202610291507" alt="NAVINSKYY. Brand New Day. A new beginning, the same responsibility." width="100%"/>
+<img src="assets/banner.svg?v=202610291508" alt="NAVINSKYY. Brand New Day. A new beginning, the same responsibility." width="100%"/>
 
 ### *"Every great developer has an origin story."*
 
@@ -10,7 +10,7 @@ Building systems. Solving problems. Always improving.
 
 <br/>
 
-<img src="assets/act-1.svg?v=202610291507" alt="Act I: The Origin Story" width="100%"/>
+<img src="assets/act-1.svg?v=202610291508" alt="Act I: The Origin Story" width="100%"/>
 
 No radioactive spider here. My origin story is a terminal window and a lab that would not work until it did.
 
@@ -29,7 +29,7 @@ What I care about: systems that hold up when something goes wrong, documentation
 
 <br/>
 
-<img src="assets/act-2.svg?v=202610291507" alt="Act II: The Arsenal" width="100%"/>
+<img src="assets/act-2.svg?v=202610291508" alt="Act II: The Arsenal" width="100%"/>
 
 <p><sub><b>LANGUAGES & SCRIPTING</b></sub><br/>
 <img src="https://img.shields.io/badge/Python-080A0F?style=flat-square&logo=python&logoColor=C1121F" alt="Python"/> <img src="https://img.shields.io/badge/JavaScript-080A0F?style=flat-square&logo=javascript&logoColor=C1121F" alt="JavaScript"/> <img src="https://img.shields.io/badge/TypeScript-080A0F?style=flat-square&logo=typescript&logoColor=C1121F" alt="TypeScript"/> <img src="https://img.shields.io/badge/C++-080A0F?style=flat-square&logo=cplusplus&logoColor=C1121F" alt="C++"/> <img src="https://img.shields.io/badge/SQL-080A0F?style=flat-square&logo=postgresql&logoColor=C1121F" alt="SQL"/> <img src="https://img.shields.io/badge/HTML%20%2F%20CSS-080A0F?style=flat-square&logo=html5&logoColor=C1121F" alt="HTML/CSS"/></p>
@@ -50,19 +50,19 @@ What I care about: systems that hold up when something goes wrong, documentation
 
 <br/>
 
-<img src="assets/act-3.svg?v=202610291507" alt="Act III: The Daily Bugle" width="100%"/>
+<img src="assets/act-3.svg?v=202610291508" alt="Act III: The Daily Bugle" width="100%"/>
 
 <div align="center">
-  <img src="assets/bugle-report.svg?v=202610291507" alt="The Daily Bugle developer intelligence report: contributions in the last 12 months, all-time total, public commits, private contributions, pull requests and public repositories." width="100%"/>
+  <img src="assets/bugle-report.svg?v=202610291508" alt="The Daily Bugle developer intelligence report: contributions in the last 12 months, all-time total, public commits, private contributions, pull requests and public repositories." width="100%"/>
   <br/><br/>
-  <img src="assets/bugle-activity.svg?v=202610291507" alt="Field report: contribution calendar for the last 12 months, current and longest streak, and top languages by code size." width="100%"/>
+  <img src="assets/bugle-activity.svg?v=202610291508" alt="Field report: contribution calendar for the last 12 months, current and longest streak, and top languages by code size." width="100%"/>
   <br/>
   <sub>Filed every night at 12:00 AM Manila time by a GitHub Action in this repo. The numbers come straight from the GitHub API, and private work appears only as counts.</sub>
 </div>
 
 <br/>
 
-<img src="assets/act-4.svg?v=202610291507" alt="Act IV: Friendly Neighborhood Missions" width="100%"/>
+<img src="assets/act-4.svg?v=202610291508" alt="Act IV: Friendly Neighborhood Missions" width="100%"/>
 
 <table>
 <tr>
@@ -131,15 +131,15 @@ What I care about: systems that hold up when something goes wrong, documentation
 
 <br/>
 
-<img src="assets/act-5.svg?v=202610291507" alt="Act V: The Web of Activity" width="100%"/>
+<img src="assets/act-5.svg?v=202610291508" alt="Act V: The Web of Activity" width="100%"/>
 
 <div align="center">
-  <img src="assets/web-of-activity.svg?v=202610291507" alt="Web of activity: every day with contributions in the last 12 months is a red node, linked in order by web threads while a small spider emblem moves across." width="100%"/>
+  <img src="assets/web-of-activity.svg?v=202610291508" alt="Web of activity: every day with contributions in the last 12 months is a red node, linked in order by web threads while a small spider emblem moves across." width="100%"/>
 </div>
 
 <br/>
 
-<img src="assets/act-6.svg?v=202610291507" alt="Act VI: The Spider Signal" width="100%"/>
+<img src="assets/act-6.svg?v=202610291508" alt="Act VI: The Spider Signal" width="100%"/>
 
 <div align="center">
 
@@ -151,6 +151,6 @@ Got a system that needs building, a lab that won't cooperate, or an internship o
 
 <br/><br/>
 
-<img src="assets/footer.svg?v=202610291507" alt="Ship with care. Own what you build. Come back better tomorrow." width="100%"/>
+<img src="assets/footer.svg?v=202610291508" alt="Ship with care. Own what you build. Come back better tomorrow." width="100%"/>
 
 </div>
