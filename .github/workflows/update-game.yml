@@ -1,4 +1,4 @@
-name: Update Profile Reports
+name: Update Spidey Profile
 
 on:
   schedule:
@@ -8,7 +8,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/**'
-      - '.github/workflows/update-profile.yml'
+      - '.github/workflows/update-game.yml'
 
 permissions:
   contents: write
@@ -25,15 +25,24 @@ jobs:
 
       - run: pip install pillow
 
-      # Daily Bugle reports + pixel Web of Activity
-      - name: Generate reports
+      - name: Generate Spider-Man stats card
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/generate_reports.py
+        run: python scripts/generate_spider_card.py
+
+      - name: Generate Spider-Man stats summary
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_spider_stats.py
+
+      - name: Generate web-shooter game
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_web_game.py
 
       # browsers cache images by URL; a new stamp each run makes them fetch the fresh ones
       - name: Stamp image links
-        run: sed -i -E "s/\.(svg|gif|png)\?v=[0-9]+/.\1?v=$(TZ=Asia/Manila date +%Y%m%d%H%M)/g" README.md
+        run: sed -i -E "s/\.(svg|gif)\?v=[0-9]+/.\1?v=$(TZ=Asia/Manila date +%Y%m%d%H%M)/g" README.md
 
       - name: Commit changes
         run: |
@@ -44,6 +53,6 @@ jobs:
             echo "Nothing changed"
             exit 0
           fi
-          git commit -m "🕷️ Daily Bugle: nightly report"
+          git commit -m "🕷️ Daily web update: stats + thwip log"
           git pull --rebase origin main
           git push
