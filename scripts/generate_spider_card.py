@@ -268,9 +268,8 @@ def render(s):
 </g>
 <text x="132" y="62" class="tag" style="fill:{YELLOW}">FRIENDLY NEIGHBORHOOD DEVELOPER</text>
 <g class="h1" transform="translate(132,98) skewX(-8)" stroke-linejoin="round">
-  <text x="4" y="4" style="fill:{BLUE_DARK}" stroke="#000" stroke-width="1.5">{escape(USER)}</text>
-  <text x="2" y="2" style="fill:{BLUE}">{escape(USER)}</text>
-  <text style="fill:{RED}" stroke="{BLUE_LIGHT}" stroke-width="1.2">{escape(USER)}</text>
+  <text x="3" y="3" style="fill:#000" opacity=".55">{escape(USER)}</text>
+  <text style="fill:{RED}" stroke="#000" stroke-width="3.5" paint-order="stroke">{escape(USER)}</text>
 </g>
 <text x="132" y="122" class="sub" style="fill:{TEXT}">AI Security Intern @ RivanAI  ·  BSCS '27 · LPU – Manila</text>
 

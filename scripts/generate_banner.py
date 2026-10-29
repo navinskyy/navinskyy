@@ -50,7 +50,7 @@ def main():
     impact = TTFont(f"{FONTS}/impact.ttf")
     bahn = instantiateVariableFont(TTFont(f"{FONTS}/bahnschrift.ttf"), {"wght": 700, "wdth": 100})
 
-    title, tw = text_path(impact, "SPIDER-NAVIN", 150, tracking=4)
+    title, tw = text_path(impact, "NAVIN LLANES", 150, tracking=4)
     sub, sw = text_path(bahn, "BRAND NEW COMMIT", 44, tracking=10)
     tag, gw = text_path(bahn, "FRIENDLY NEIGHBORHOOD DEVELOPER", 15, tracking=5)
 
@@ -64,7 +64,7 @@ def main():
     )
     face = f'transform="translate({tx:.1f},{ty}) skewX(-8)"'
 
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Spider-Navin: Brand New Commit">
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Navin Llanes: Brand New Commit">
 <defs>
   <path id="t" d="{title}"/>
   <path id="s" d="{sub}"/>

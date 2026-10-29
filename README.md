@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="banner.svg?v=202610291535" alt="Spider-Navin: Brand New Commit" width="100%"/>
+<img src="banner.svg?v=202610291535" alt="Navin Llanes: Brand New Commit" width="100%"/>
 
 <a href="https://github.com/navinskyy">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3500&pause=1000&color=FCD11A&center=true&vCenter=true&width=640&lines=%F0%9F%95%B7%EF%B8%8F+Spider-sense+tingling...+a+bug+nearby;%F0%9F%95%B8%EF%B8%8F+Thwip!+Bug+webbed+and+patched;%F0%9F%8F%99%EF%B8%8F+Swinging+through+the+codebase;%E2%9A%A1+With+great+power+comes+great+commits" alt="Typing SVG" />
