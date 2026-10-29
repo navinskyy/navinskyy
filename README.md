@@ -1,6 +1,9 @@
 <div align="center">
 
-<img src="assets/banner.svg?v=202610291508" alt="NAVINSKYY. Brand New Day. A new beginning, the same responsibility." width="100%"/>
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero.png?v=0"/>
+  <img src="assets/hero.gif?v=0" alt="Pixel-art night skyline: a red-and-blue web-slinger swings between rooftops under the moon beneath the title NAVINSKYY, Brand New Day." width="100%"/>
+</picture>
 
 ### *"Every great developer has an origin story."*
 
@@ -10,26 +13,31 @@ Building systems. Solving problems. Always improving.
 
 <br/>
 
-<img src="assets/act-1.svg?v=202610291508" alt="Act I: The Origin Story" width="100%"/>
+<img src="assets/act-1.png?v=0" alt="Act I: The Origin Story" width="100%"/>
 
-No radioactive spider here. My origin story is a terminal window and a lab that would not work until it did.
+<table>
+<tr>
+<td width="30%" align="center" valign="top">
+<img src="assets/portrait.png?v=0" alt="Pixel-art web-slinger crouched on a rooftop under the moon" width="100%"/>
+<br/><sub><b>PLAYER 1 · NAVINSKYY</b></sub>
+</td>
+<td valign="top">
+<b>CLASS</b> · AI Security Intern @ RivanAI<br/><b>HOME BASE</b> · Manila, Philippines<br/><b>ACADEMY</b> · BS Computer Science, LPU – Manila · Class of 2027<br/><b>PERK</b> · Dean's Lister<br/><b>PARTY</b> · LPE VP Committee · LPU Esports<br/><b>SIDE QUESTS</b> · CompTIA A+ · Security+ (SY0-701) · CCNA<br/><b>LANGUAGES</b> · English · Filipino
+</td>
+</tr>
+</table>
 
-I'm a **Computer Science student at LPU – Manila** (Class of 2027) and an **AI Security Intern at RivanAI**. Most of my recent work happens in security labs: catching attacks with Wazuh, automating the response with Shuffle, watching Cisco gear with Zabbix, and pulling evidence out of memory with Volatility. When I'm not in a lab, I build web apps people can use, like NursePrep.
+No radioactive spider here. My origin story is a terminal window and a lab that wouldn't work until it did.
+
+Most of my recent work happens in security labs: catching attacks with Wazuh, automating the response with Shuffle, watching Cisco gear with Zabbix, and pulling evidence out of memory with Volatility. Outside the lab I build web apps people actually use, like NursePrep.
 
 What I care about: systems that hold up when something goes wrong, documentation the next person can follow, and getting a little better every day.
 
-<table>
-<tr><td valign="top" nowrap><b>Day job</b></td><td>AI Security Intern @ RivanAI</td></tr>
-<tr><td valign="top" nowrap><b>Academy</b></td><td>BS Computer Science · LPU – Manila · Class of 2027 · Dean's Lister</td></tr>
-<tr><td valign="top" nowrap><b>Base of operations</b></td><td>Manila, Philippines</td></tr>
-<tr><td valign="top" nowrap><b>Team-ups</b></td><td>LPE VP Committee · LPU Esports</td></tr>
-<tr><td valign="top" nowrap><b>Training path</b></td><td>CompTIA A+ · CompTIA Security+ (SY0-701) · CCNA, following the course repos I've forked</td></tr>
-<tr><td valign="top" nowrap><b>Languages</b></td><td>English · Filipino</td></tr>
-</table>
-
 <br/>
 
-<img src="assets/act-2.svg?v=202610291508" alt="Act II: The Arsenal" width="100%"/>
+<img src="assets/act-2.png?v=0" alt="Act II: The Arsenal" width="100%"/>
+
+Every hero needs gear. Here is mine, sorted by the kind of mission it gets used on.
 
 <p><sub><b>LANGUAGES & SCRIPTING</b></sub><br/>
 <img src="https://img.shields.io/badge/Python-080A0F?style=flat-square&logo=python&logoColor=C1121F" alt="Python"/> <img src="https://img.shields.io/badge/JavaScript-080A0F?style=flat-square&logo=javascript&logoColor=C1121F" alt="JavaScript"/> <img src="https://img.shields.io/badge/TypeScript-080A0F?style=flat-square&logo=typescript&logoColor=C1121F" alt="TypeScript"/> <img src="https://img.shields.io/badge/C++-080A0F?style=flat-square&logo=cplusplus&logoColor=C1121F" alt="C++"/> <img src="https://img.shields.io/badge/SQL-080A0F?style=flat-square&logo=postgresql&logoColor=C1121F" alt="SQL"/> <img src="https://img.shields.io/badge/HTML%20%2F%20CSS-080A0F?style=flat-square&logo=html5&logoColor=C1121F" alt="HTML/CSS"/></p>
@@ -50,7 +58,7 @@ What I care about: systems that hold up when something goes wrong, documentation
 
 <br/>
 
-<img src="assets/act-3.svg?v=202610291508" alt="Act III: The Daily Bugle" width="100%"/>
+<img src="assets/act-3.png?v=0" alt="Act III: The Daily Bugle" width="100%"/>
 
 <div align="center">
   <img src="assets/bugle-report.svg?v=202610291508" alt="The Daily Bugle developer intelligence report: contributions in the last 12 months, all-time total, public commits, private contributions, pull requests and public repositories." width="100%"/>
@@ -62,7 +70,7 @@ What I care about: systems that hold up when something goes wrong, documentation
 
 <br/>
 
-<img src="assets/act-4.svg?v=202610291508" alt="Act IV: Friendly Neighborhood Missions" width="100%"/>
+<img src="assets/act-4.png?v=0" alt="Act IV: Friendly Neighborhood Missions" width="100%"/>
 
 <table>
 <tr>
@@ -131,15 +139,20 @@ What I care about: systems that hold up when something goes wrong, documentation
 
 <br/>
 
-<img src="assets/act-5.svg?v=202610291508" alt="Act V: The Web of Activity" width="100%"/>
+<img src="assets/act-5.png?v=0" alt="Act V: The Web of Activity" width="100%"/>
 
 <div align="center">
-  <img src="assets/web-of-activity.svg?v=202610291508" alt="Web of activity: every day with contributions in the last 12 months is a red node, linked in order by web threads while a small spider emblem moves across." width="100%"/>
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/web-of-activity.png?v=0"/>
+    <img src="assets/web-of-activity.gif?v=0" alt="Pixel-art web of activity: a web-slinger zip-lines across the last 12 months of contributions and shoots a web at every day I contributed, lighting it red." width="100%"/>
+  </picture>
+  <br/>
+  <sub>Each lit square is a day I contributed. Rebuilt every night from the GitHub API.</sub>
 </div>
 
 <br/>
 
-<img src="assets/act-6.svg?v=202610291508" alt="Act VI: The Spider Signal" width="100%"/>
+<img src="assets/act-6.png?v=0" alt="Act VI: The Spider Signal" width="100%"/>
 
 <div align="center">
 
@@ -151,6 +164,6 @@ Got a system that needs building, a lab that won't cooperate, or an internship o
 
 <br/><br/>
 
-<img src="assets/footer.svg?v=202610291508" alt="Ship with care. Own what you build. Come back better tomorrow." width="100%"/>
+<img src="assets/footer.png?v=0" alt="Ship with care. Own what you build. Come back better tomorrow." width="100%"/>
 
 </div>

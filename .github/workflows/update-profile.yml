@@ -23,7 +23,9 @@ jobs:
         with:
           python-version: '3.12'
 
-      # Daily Bugle reports + Web of Activity (standard library only)
+      - run: pip install pillow
+
+      # Daily Bugle reports + pixel Web of Activity
       - name: Generate reports
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -31,7 +33,7 @@ jobs:
 
       # browsers cache images by URL; a new stamp each run makes them fetch the fresh ones
       - name: Stamp image links
-        run: sed -i -E "s/\.(svg|gif)\?v=[0-9]+/.\1?v=$(TZ=Asia/Manila date +%Y%m%d%H%M)/g" README.md
+        run: sed -i -E "s/\.(svg|gif|png)\?v=[0-9]+/.\1?v=$(TZ=Asia/Manila date +%Y%m%d%H%M)/g" README.md
 
       - name: Commit changes
         run: |

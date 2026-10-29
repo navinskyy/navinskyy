@@ -1,20 +1,20 @@
 """Generate the live assets from GitHub data:
   assets/bugle-report.svg    Daily Bugle front page: headline numbers
   assets/bugle-activity.svg  Field report: contribution calendar, streaks, languages
-  assets/web-of-activity.svg Animated web connecting every contribution day
+  assets/web-of-activity.gif Pixel hero webbing every contribution day (+ .png still)
 
-Run nightly by .github/workflows/update-game.yml (12:00 AM Manila time).
+Run nightly by .github/workflows/update-profile.yml (12:00 AM Manila time).
     GITHUB_TOKEN=... python scripts/generate_reports.py
     python scripts/generate_reports.py --sample      # offline preview
 """
 
 import datetime as dt
-import math
 import os
 
+import generate_web
 from github_data import USER, load, summarize
-from theme import (BLACK, BLUE, BLUE_GLOW, CRIMSON, HAIRLINE, MIDNIGHT, PANEL, REDUCED_MOTION, RED, RED_GLOW,
-                   SILVER, WHITE, emblem, grain_defs, label, measure, skyline, text, web)
+from theme import (BLACK, BLUE, BLUE_GLOW, CRIMSON, HAIRLINE, MIDNIGHT, PANEL, RED, RED_GLOW, SILVER, WHITE, emblem,
+                   grain_defs, label, measure, text, web)
 
 ASSETS = os.path.join(os.path.dirname(__file__), "..", "assets")
 
@@ -232,95 +232,13 @@ def bugle_activity(s, m):
     return frame(W, H, (title, body))
 
 
-def web_of_activity(s, m):
-    W, H = 900, 330
-    weeks = weeks_of(m["last_year"])[-53:]
-    peak = max([n for _, n in m["last_year"]] + [1])
-    gx, gy, sx, sy = 46, 92, 15.6, 25
-    T, SWEEP = 16, 9.0  # loop length and how long the reveal takes (seconds)
-
-    def pos(c, r):
-        # slight sag towards the middle rows so the grid reads as webbing, not a table
-        return gx + c * sx, gy + r * sy + 4 * math.sin(math.pi * c / 52)
-
-    active, dots = [], []
-    for c, week in enumerate(weeks):
-        for r, day in enumerate(week):
-            if day is None:
-                continue
-            x, y = pos(c, r)
-            if day[1]:
-                active.append((c, r, x, y, level(day[1], peak), day))
-            else:
-                dots.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="1.1"/>')
-
-    def delay(c):
-        return f"{SWEEP * c / 52:.2f}s"
-
-    lines = []
-    for i, (c, r, x, y, lv, _) in enumerate(active):
-        # chronological thread to the previous active day
-        if i:
-            pc, pr, px, py = active[i - 1][:4]
-            mx, my = (px + x) / 2, (py + y) / 2 + 6
-            lines.append(f'<path pathLength="1" style="animation-delay:{delay(c)}" '
-                         f'd="M{px:.1f} {py:.1f}Q{mx:.1f} {my:.1f} {x:.1f} {y:.1f}" stroke-opacity="{.35 + lv * .1:.2f}"/>')
-        # cross threads to active neighbours in the next two weeks
-        for (c2, r2, x2, y2, lv2, _) in active[i + 1:i + 12]:
-            if 0 < c2 - c <= 2 and abs(r2 - r) <= 2 and (c2, r2) != (c, r):
-                lines.append(f'<path pathLength="1" class="cross" style="animation-delay:{delay(c2)}" '
-                             f'd="M{x:.1f} {y:.1f}L{x2:.1f} {y2:.1f}"/>')
-    nodes = []
-    for c, r, x, y, lv, (d, n) in active:
-        rad = 1.8 + lv * 0.9
-        nodes.append(f'<g class="node" style="animation-delay:{delay(c)}"><circle cx="{x:.1f}" cy="{y:.1f}" r="{rad + 3:.1f}" '
-                     f'fill="{RED}" opacity=".18"/><circle cx="{x:.1f}" cy="{y:.1f}" r="{rad:.1f}" fill="{LEVELS[lv]}">'
-                     f'<title>{fmt_day(d)}: {n}</title></circle></g>')
-
-    x0, x1 = pos(0, 0)[0], pos(len(weeks) - 1, 0)[0]
-    hang = gy - 24
-    keyframes = (f"0% {{ transform: translate({x0:.0f}px,-120px); }} 5% {{ transform: translate({x0:.0f}px,0); }} "
-                 f"{100 * SWEEP / T:.0f}% {{ transform: translate({x1:.0f}px,0); }} "
-                 f"{100 * (SWEEP + 1.5) / T:.0f}% {{ transform: translate({x1:.0f}px,0); }} "
-                 f"{100 * (SWEEP + 3) / T:.0f}%, 100% {{ transform: translate({x1:.0f}px,-120px); }}")
-    style = f'''
-  .thread path {{ stroke-dasharray: 1; animation: draw {T}s ease-out infinite both; }}
-  @keyframes draw {{ 0% {{ stroke-dashoffset: 1; opacity: 1; }} 6% {{ stroke-dashoffset: 0; }}
-                     82% {{ stroke-dashoffset: 0; opacity: 1; }} 92%, 100% {{ stroke-dashoffset: 0; opacity: 0; }} }}
-  .node {{ animation: pop {T}s ease-out infinite both; transform-box: fill-box; transform-origin: center; }}
-  @keyframes pop {{ 0% {{ opacity: 0; transform: scale(.2); }} 3% {{ opacity: 1; transform: scale(1.35); }}
-                    6% {{ transform: scale(1); }} 82% {{ opacity: 1; }} 92%, 100% {{ opacity: 0; }} }}
-  .spider {{ animation: crawl {T}s cubic-bezier(.45,0,.55,1) infinite both; transform: translate({x1:.0f}px,0); }}
-  @keyframes crawl {{ {keyframes} }}
-  {REDUCED_MOTION}
-'''
-    title = (f'<title id="t">Web of activity: {len(active)} active days in the last 12 months, each one a node, '
-             f'linked by web threads.</title>')
-    body = f'''
-<radialGradient id="glow" cx=".5" cy="1.1" r=".7"><stop offset="0" stop-color="{CRIMSON}" stop-opacity=".45"/><stop offset="1" stop-color="{CRIMSON}" stop-opacity="0"/></radialGradient>
-<rect width="{W}" height="{H}" fill="url(#glow)"/>
-{skyline(W, H, 41, "#0A1628", 14, 54, 22, 50, 2)}
-{text("LAST 12 MONTHS", "display", 15, 46, 41, tracking=6, attrs=f'fill="{RED_GLOW}"')}
-{label(f"{s['year_total']} contributions  ·  {len(active)} active days", W - 84, 40, 11.5, SILVER, "end")}
-<g fill="{SILVER}" opacity=".22">{"".join(dots)}</g>
-<g class="thread" fill="none" stroke="{RED}" stroke-width=".9" stroke-linecap="round">{"".join(lines)}</g>
-{"".join(nodes)}
-<g class="spider">
-  <path d="M0 {-hang - 140}V{hang - 10}" stroke="{SILVER}" stroke-opacity=".55" stroke-width=".8"/>
-  {emblem(0, hang, .17, RED)}
-</g>
-{label("Each node is a day with contributions. Threads follow them in order.", 46, H - 20, 10.5, SILVER)}
-'''
-    return frame(W, H, (title, body), style=style)
-
-
 def main():
     s = load()
     m = summarize(s)
     os.makedirs(ASSETS, exist_ok=True)
     write("bugle-report.svg", bugle_report(s, m))
     write("bugle-activity.svg", bugle_activity(s, m))
-    write("web-of-activity.svg", web_of_activity(s, m))
+    generate_web.build(s, m, ASSETS)
 
 
 if __name__ == "__main__":
