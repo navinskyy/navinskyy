@@ -26,6 +26,21 @@ PANEL = "#11142a"
 TEXT = "#f1f1f5"
 MUTED = "#9aa3c7"
 
+# Spider emblem, 75 x 123 units, centred on x=0 with the leg tips at y=0.
+# Right-hand legs are drawn once and mirrored for the left.
+_LEGS = (
+    '<path d="M22 0.2C31 7 37.6 17 37.6 28.9L16.6 42.3L37.6 56.4C36.5 85 30 105 19.5 122.8'
+    'C25 104 34 72 31.4 54.9L11.8 43.3L32.4 28.1C33.5 20 30 10 22 0.2Z"/>'
+    '<path d="M16.2 14.2C20 17.5 21 27 21 33.4L9.2 43.3L23.8 52.8C25 72 19 92 15.2 102'
+    'C18 85 19.5 65 18.8 52.2L5.5 44.1L18.5 32.1C19 27 18 20 16.2 14.2Z"/>'
+)
+SPIDER_EMBLEM = (
+    f'<g>{_LEGS}</g><g transform="scale(-1,1)">{_LEGS}</g>'
+    '<path d="M-3.2 36.2V37.6H3.2V36.2L7.2 39.6L3.4 42.9H-3.4L-7.2 39.6Z"/>'
+    '<path d="M-3.4 44.2H3.4L8.5 48.6C8 58 3 66 0 68.7C-3 66-8 58-8.5 48.6Z"/>'
+)
+
+
 QUERY = """
 query($login: String!) {
   user(login: $login) {
@@ -246,18 +261,8 @@ def render(s):
 <rect width="{W}" height="150" fill="url(#hdr)"/>
 {web_bg(W - 60, -20, 210, 5, 14, "#000", 0.35)}
 <g class="swing">
-  <line x1="700" y1="0" x2="700" y2="78" stroke="#fff" stroke-width="1.5" opacity=".8"/>
-  <g transform="translate(700,96)">
-    <ellipse rx="13" ry="16" fill="#111"/>
-    <circle cy="-20" r="9" fill="#111"/>
-    <g stroke="#111" stroke-width="3" stroke-linecap="round" fill="none">
-      <path d="M-11-8 q-14-10-18-22"/><path d="M11-8 q14-10 18-22"/>
-      <path d="M-12 0 q-16 0-22-8"/><path d="M12 0 q16 0 22-8"/>
-      <path d="M-11 8 q-14 8-18 22"/><path d="M11 8 q14 8 18 22"/>
-      <path d="M-9 13 q-8 12-8 26"/><path d="M9 13 q8 12 8 26"/>
-    </g>
-    <path d="M0-8 l5 7-5 7-5-7z" fill="{RED}"/>
-  </g>
+  <line x1="700" y1="0" x2="700" y2="50" stroke="#fff" stroke-width="1.5" opacity=".8"/>
+  <g transform="translate(700,14)" fill="#111">{SPIDER_EMBLEM}</g>
 </g>
 <g transform="translate(32,34)">
   <circle cx="40" cy="40" r="40" fill="{BG}" stroke="#fff" stroke-width="3"/>
